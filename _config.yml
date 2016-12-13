@@ -3,4 +3,4 @@ markdown: kramdown
 sass:
   sass_dir: _sass
   style: compressed
-  fonts_dir: public/fonts
+  fonts_dir: assets/fonts
