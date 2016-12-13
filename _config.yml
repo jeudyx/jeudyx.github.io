@@ -1,0 +1,6 @@
+name: Under Armour Developer
+markdown: github
+sass:
+  sass_dir: _sass
+  style: compressed
+  fonts_dir: public/fonts
