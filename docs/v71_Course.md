@@ -1,9 +1,6 @@
 ---
-name: Course
-doc_uri: Course
-versions: api/0.1, v7.0, v7.1
-released: 2013-09-30
-tags: workouts
+layout: default
+title: Course
 ---
 
 # ${name}
