@@ -4,6 +4,8 @@ services:
   local:
       image: jekyll/jekyll:pages
       command: jekyll serve --watch --incremental
+      environment:
+        - JEKYLL_ENV=development
       ports:
         - 4000:4000
       volumes:
