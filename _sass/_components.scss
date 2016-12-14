@@ -1,0 +1,13 @@
+.button {
+  display: inline-block;
+  font-size: 24px;
+  font-family: $urbano-bold-condensed;
+  line-height: 2em;
+  text-transform: uppercase;
+  width: 200px;
+}
+
+.button-red {
+  background: #ea212e;
+  color: #fff;
+}
