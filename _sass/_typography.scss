@@ -1,0 +1,23 @@
+body {
+  color: #333;
+  font-family: $urbano-regular;
+  font-size: 18px;
+}
+
+h2 {
+  font-family: $urbano-condensed;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 1.5em;
+  text-transform: uppercase;
+}
+
+p {
+  margin: 1.25em auto;
+  line-height: 1.5em;
+}
+
+a {
+  color: #006fc6;
+  text-decoration: none;
+}
