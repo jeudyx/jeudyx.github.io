@@ -1,5 +1,5 @@
 .site-footer {
-  background: #262626;
+  background: #333;
   @include flexbox;
   @include flex-direction(column);
   @include align-items(center);
@@ -11,16 +11,26 @@
 }
 
 .site-footer-logo {
+  width: 100%;
+  background: #262626;
+  @include large {
+    background: transparent;
+  }
+}
+
+.site-footer-logo-img {
   display: block;
   height: 33px;
   width: auto;
   padding: 20px;
+  margin: 0 auto;
   -webkit-filter: grayscale(100%) brightness(0) invert(100%);
   filter: grayscale(100%) brightness(0) invert(100%);
   box-sizing: content-box;
 
   @include large {
     height: 24px;
+    margin: 0;
   }
 
   @media only screen and (min-width: 700px) {
