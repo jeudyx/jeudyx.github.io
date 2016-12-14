@@ -1,0 +1,47 @@
+.blog-content {
+
+  margin: 2em auto;
+  max-width: 720px;
+
+  h2 {
+    font-family: $urbano-condensed;
+  }
+
+  a {
+    color: #006fc6;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  ul {
+    margin-left: 2em;
+  }
+
+  li {
+
+    line-height: 1.5em;
+    list-style-position: outside;
+    list-style-type: disc;
+
+    a {
+      font-weight: normal;
+    }
+
+  }
+
+  table {
+    margin: 1em auto;
+
+    td {
+      padding: .25em 1em;
+    }
+
+  }
+
+}
+
+.blog-date {
+  color: #999;
+  font-size: 16px;
+  text-align: right;
+}

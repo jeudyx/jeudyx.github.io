@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+    {% include header.html %}
+
+    <article class="blog-content">
+      <h2>{{ page.title }}</h2>
+      <p class="blog-date">
+        {{ page.date | timeago }}
+      </p>
+      <section>
+        {{ content }}
+      </section>
+    </article>
+    {% include footer.html %}
+  </body>
+
+</html>

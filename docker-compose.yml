@@ -2,7 +2,8 @@ version: '2'
 services:
 
   local:
-      image: jekyll/jekyll:pages
+      build:
+        context: .
       command: jekyll serve --watch --incremental
       environment:
         - JEKYLL_ENV=development
