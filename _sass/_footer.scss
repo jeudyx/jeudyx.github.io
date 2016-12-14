@@ -14,6 +14,7 @@
   width: 100%;
   background: #262626;
   @include large {
+    width: auto;
     background: transparent;
   }
 }
