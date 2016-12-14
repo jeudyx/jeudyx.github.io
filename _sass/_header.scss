@@ -1,11 +1,28 @@
-header {
-
+.site-header {
   background: #fff;
   border-top: 20px solid #ea212e;
+  padding: 25px 0;
+  position: relative;
+}
 
-  a {
-    text-decoration: none;
-    text-transform: uppercase;
+.site-logo {
+  height: 33px;
+  width: 295px;
+  display: block;
+
+  h1 {
+    line-height: 0;
   }
+}
 
+.site-nav {
+  width: 100%;
+  position: absolute;
+  background: black;
+  top: 103px;
+}
+
+.site-nav-item {
+  color: #fff;
+  font-size: 13px;
 }

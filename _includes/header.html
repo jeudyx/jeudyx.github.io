@@ -1,18 +1,25 @@
 <header class="site-header">
 
   <a href="{{ site.github.url }}" class="site-logo">
-    <h1><img src="{{ site.github.url }}/assets/images/uacf_logo.png" alt="Under Armour Connected Fitness" /></h1>
+    <h1>
+      <img
+        width="295"
+        height="33"
+        src="{{ site.github.url }}/assets/images/uacf_logo.png"
+        alt="Under Armour Connected Fitness"
+      />
+    </h1>
   </a>
 
   <nav class="site-nav">
-    <ul class="site-nav-main">
-      <li><a href="{{ site.github.url }}/docs">Docs</a></li>
-      <li><a href="{{ site.github.url }}/pricing">Pricing</a></li>
-      <li><a href="{{ site.github.url }}/blog">Blog</a></li>
+    <ul class="site-nav-list">
+      <li class="site-nav-item"><a href="{{ site.github.url }}/docs">Docs</a></li>
+      <li class="site-nav-item"><a href="{{ site.github.url }}/pricing">Pricing</a></li>
+      <li class="site-nav-item"><a href="{{ site.github.url }}/blog">Blog</a></li>
     </ul>
 
-    <form action="" class="site-nav-search">
-      <input type="text" class="site-nav-search-input">
+    <form action="/search" method="GET" class="site-nav-search">
+      <input type="text" class="site-nav-search-input" name="q" placeholder="Enter Search..." />
     </form>
   </nav>
 
