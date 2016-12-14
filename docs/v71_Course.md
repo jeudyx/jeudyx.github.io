@@ -1,5 +1,5 @@
 ---
-layout: ninesixty
+layout: documentation
 title: Course
 resource: Course
 version: v7.1
