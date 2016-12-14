@@ -1,0 +1,44 @@
+---
+layout: ninesixty
+title: Under Armour Developer - Versioning Policy
+---
+
+<section class="page-versioning">
+
+  <h1>Versioning Policy</h1>
+
+  <p>
+    Versioning our API allows us to roll out new changes over time while continuing to support existing products so
+    developers have plenty of time to move to the new version.
+  </p>
+
+  <p>
+    Below is our policy:
+  </p>
+
+  <ul>
+    <li>All API resources have the same version and will be incremented together</li>
+    <li>Keep the version unchanged when introducing a non-breaking change</li>
+    <li>Increment the minor version (e.g. 7.0 to 7.1) when introducing a breaking change</li>
+    <li>Increment the major version (e.g. 7.1 to 8.0) when introducing substantial functionality</li>
+    <li>Version APIs and SDKs independently, e.g. V7.0 API is encapsulated in V2.0 of SDK</li>
+    <li>Allow multiple versions of APIs or SDKs with different functionality to exist</li>
+  </ul>
+
+  <h2>Deprecation Schedules</h2>
+
+  <p>
+    Each version of our API is guaranteed to be supported for at least one year. <strong>A version will no longer be
+      usable one year after the date that a subsequent version is released.</strong>
+  </p>
+
+  <p>
+    If API version 7.0 is released on July 1st, 2014 and API version 7.1 is released December 1st, 2014 then v7.0
+    would expire on December 1st, 2015, one year after the release of v7.1.
+  </p>
+
+  <p>Below is an example of the timeline:</p>
+
+  <img src="/assets/images/versioning_bar_graph.png">
+
+</section>
