@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: ninesixty
 title: Course
 resource: Course
 version: v7.1
@@ -7,11 +7,11 @@ version: v7.1
 
 # {{ page.resource }}
 
-Returns information about {{ page.resource }}s, which are user-defined or automatically generated [`Route`][latest Route] segments that users may travel upon during [`Workouts`][latest Workout] and over which they may compete for various performance metrics measured over the {{ page.resource }}.
+Returns information about {{ page.resource }}s, which are user-defined or automatically generated [Route]({{ site.github.url }}/docs/v71_Route) segments that users may travel upon during [Workouts]({{ site.github.url }}/docs/v71_Workout) and over which they may compete for various performance metrics measured over the {{ page.resource }}.
 
 ## Resource URIs
 
-**Item URI:** `/{{ page.version }}/course/<pk>/`
+**Item URI:** `/{{ page.version }}/course/<pk>/` <br />
 **Collection URI:** `/{{ page.version }}/course/`
 
 ## Item
@@ -92,7 +92,7 @@ None
 
 ### Embedded collections
 
-`courses` A collection of {{ page.resource }} items with properties as described under [Item properties][] and links as described under [Item links][]
+`courses` A collection of {{ page.resource }} items with properties as described under [Workouts latest][] and links as described under [Item links][]
 
 ## Usage
 
