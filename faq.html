@@ -1,8 +1,127 @@
 ---
-layout: default
+layout: ninesixty
 title: Under Armour Developer - Developer FAQ
 ---
 
+<h1>Developer FAQ</h1>
+
 <section>
-  FAQs
+  <strong>Is There Another Way To Authenticate For The API Other Than OAuth2?</strong>
+  <p>No, not at this time.</p>
+</section>
+
+<section>
+    <strong>What Features Does The UACF API Have?</strong>
+    <p>Please refer to the UACF documentation found <a href="/docs">here</a>. All information about accessible data is documented for your reference.</p>
+</section>
+
+<section>
+  <strong>I Receive A 302 (Redirect) – Why Is That?</strong>
+  <p>You probably forgot to put a / on the end of the URL. For collections, use v7.0/&lt;endpoint&gt;/ and for items use v7.0/&lt;endpoint&gt;/&lt;id&gt;/.</p>
+</section>
+
+<section>
+  <strong>Is There A Difference Between A “Client” And “Consumer”?</strong>
+  <p>A Consumer Key and Client ID are the same thing. A Consumer Secret and Client Secret are the same thing. The terminology “Client” is being used for OAuth2.</p>
+</section>
+
+<section>
+    <strong>How Should I Use The API For Routes / Activity / Groups For Events?</strong>
+    <p>We often work with races and sporting events. Through our API you can have access to specific routes and activity. If you are interested in partnering for an event, please contact support at <a href="mailto:Partner-Support@underarmour.com">jmorse@underarmour.com</a>.</p>
+</section>
+
+<section>
+  <strong>Can You Search For Individual Users (Via E-Mail Address) Through The API?</strong>
+  <p>No, not at this time.</p>
+</section>
+
+<section>
+  <strong>Can You Create Groups / Challenges On The API?</strong>
+  <p>No, not at this time. This is coming soon, please stay tuned.</p>
+</section>
+
+<section>
+  <strong>What Is A Typical Expiration Date For OAuth2 Tokens?</strong>
+  <p>The typical expiration date for OAuth2 tokens is every 60 days, but we deserve the right to change this. You can find this information in the access token response.</p>
+</section>
+
+<section>
+  <strong>Do You Provide TCX Upload Support?</strong>
+  <p>This is a highly requested feature, and is coming soon. Thanks for your patience.</p>
+</section>
+
+<section>
+  <strong>Does The API Provide Distinction With Verified And Non-Verified Activity, And How Do I Distinguish This?</strong>
+  <p>Yes. This information can be found in the source field. If you’re seeing persistent errors (receiving an error response), please <a href="mailto:Partner-Support@underarmour.com">contact our support team</a>.</p>
+</section>
+
+<section>
+  <strong>Do You Provide Data Sets For Academic Research Purposes?</strong>
+  <p>We have participated in past research studies. If you are interested, please contact Kyler Eastman: <a href="keastman@underarmour.com">keastman@underarmour.com</a>.</p>
+</section>
+
+<section>
+  <strong>How Will I Know If A Token Expires?</strong>
+  <p>You will receive a 401 error, and it will tell you it has expired.</p>
+</section>
+
+<section>
+  <strong>What Is The Max (Scale) Of Daily Requests?</strong>
+  <p>Our standard API accounts have a max 25,000 requests/day and 60 requests/second. If you would like to increase your requests (quota or rate limit increase), please <a href="mailto:Partner-Support@underarmour.com">contact our support team</a> and we will get back with you. Please list in your ticket: How many requests you need, what company you work for, and the purpose for extended access.</p>
+</section>
+
+<section>
+  <strong>I’m Having Trouble With Your Timezones</strong>
+  <p>Our TZ manipulation library (pytz) relies on the Olsen database. You can view more information about the database here <a href="http://en.wikipedia.org/wiki/List_of_tz_database_time_zones">http://en.wikipedia.org/wiki/List_of_tz_database_time_zones</a>.</p>
+</section>
+
+<section>
+  <strong>I’m Seeing OAUTH_1 Errors When Trying To Use OAuth2. Why?</strong>
+  <p>Make sure you’re using https://oauth2-api.mapmyapi.com/ for OAuth2. Also make sure that you are using an “Api-Key” header with your OAuth2 client_id and an “Authorization” header with any access token you have. If you do not yet have an access token, make sure your access token request follows the example in the <a href="/docs/OAuth_2_Demo">OAuth2 demo</a> on <a href="//developer.underarmour.com">developer.underarmour.com</a>.</p>
+</section>
+
+<section>
+    <strong>Question: Do I Need A Scope / How Do I Use Them?</strong>
+    <p>No, we are currently not using scopes.</p>
+</section>
+
+<section>
+  <strong>Do You Have API Examples Available?</strong>
+  <p>If you are interested in seeing UACF API examples, visit Github:</p>
+  <p><a href="https://github.com/mapmyfitness/api-examples">https://github.com/mapmyfitness/api-examples</a></p>
+</section>
+
+<section>
+  <strong>I Have Received A “Developer Inactive” Response. What Does This Mean?</strong>
+  <p>Make sure your OAuth2 request includes an “Api-Key” header with your client ID and that your request is using the host https://oauth2-api.mapmyapi.com.</p>
+</section>
+
+<section>
+  <strong>Problem: I Get A “Callback_uri Didn’t Match” Error</strong>
+  <p>Make sure your callback uri matches exactly, query strings that vary will result in this error. Information that you may want to put in query strings should be url encoded and anything you want passed back needs to be put in the “state” parameter.</p>
+</section>
+
+<section>
+  <strong>Problem: Migration From OAuth1 To OAuth2, And Receive A 403 Error On API Request</strong>
+  <p>Make sure you’re delivering the credentials in the “Authorization” header, not the body.</p>
+</section>
+
+<section>
+  <strong>Request For Enterprise API Access</strong>
+  <p>If you need Enterprise API, put your request here. We will need: company, application, target audience, scale of use (requests per second and expected number of requests per day).</p>
+</section>
+
+<section>
+  <strong>How Can I Include The Under Armour Connected Fitness Brand In My Application?</strong>
+  <p>Under Armour Connected Fitness brand assets and company information are <a href="http://about.mapmyfitness.com/brand/">available here</a>.</p>
+</section>
+
+<section>
+  <strong>Do You Offer SDKs In Platforms Other Than Mobile?</strong>
+  <p>No, not at this time. Check back here for future enhancements or consider signing up for an Enterprise account for access to special features.</p>
+</section>
+
+<section>
+  <strong>What Is The Difference In A Basic API Access Versus Enterprise API Access?</strong>
+  <p>Consumers with an Enterprise account may have higher request limits. An Enterprise account is probably best if you anticipate a large user group. Features are basically the same between the two.</p>
 </section>
