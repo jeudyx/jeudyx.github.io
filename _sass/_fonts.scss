@@ -1,4 +1,4 @@
-$font-path: "/assets/fonts";
+$font-path: "{{ site.github.url }}/assets/fonts";
 
 @font-face {
   font-family: "Urbano Regular";
