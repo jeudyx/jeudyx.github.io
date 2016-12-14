@@ -1,0 +1,36 @@
+.page-sdk {
+
+  padding: 4em 0;
+
+  ul {
+    margin: 0 0 2em;
+  }
+
+  li {
+    list-style-type: disc;
+    list-style-position: outside;
+    margin: .5em 0;
+  }
+
+  h4 + p {
+    margin-top: 0;
+  }
+
+}
+
+.page-sdk-box {
+  background-color: #e1e1e1;
+  float: right;
+  padding: 1em;
+  text-align: center;
+  width: 280px;
+  p {
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 1em;
+  }
+  a {
+    margin-top: .5em;
+    width: 100%;
+  }
+}
