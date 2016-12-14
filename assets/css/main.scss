@@ -1,0 +1,36 @@
+---
+---
+
+@import 'reset';
+@import 'fonts';
+@import 'vars';
+
+/* additional resets */
+* {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $urbano-regular;
+  font-size: 18px;
+}
+
+h2 {
+  font-family: $urbano-condensed;
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+p {
+  color: #333;
+  margin: 1.25em auto;
+  line-height: 1.4;
+}
+
+@import 'header';
+@import 'footer';

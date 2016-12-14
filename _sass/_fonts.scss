@@ -1,0 +1,26 @@
+$font-path: "/assets/fonts";
+
+@font-face {
+  font-family: "Urbano Regular";
+  src: url($font-path + "/Urbano-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Urbano Bold Condensed";
+  src: url($font-path + "/Urbano-BoldCond.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Urbano Bold";
+  src: url($font-path + "/Urbano-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Urbano Black";
+  src: url($font-path + "/Urbano-Black.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Urbano Light";
+  src: url($font-path + "/Urbano-Light.otf") format("opentype");
+}
