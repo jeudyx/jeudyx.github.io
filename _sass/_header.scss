@@ -1,10 +1,9 @@
-section > section {
-  background: #efefef;
-  padding-bottom: 100%;
-}
-
 $header-height: 100px;
 $header-border: 20px;
+
+body {
+  padding-top: 100px;
+}
 
 .site-header {
   @include flexbox;
@@ -14,7 +13,10 @@ $header-border: 20px;
   border-top: $header-border solid #ea212e;
   background: #fff;
   height: $header-height;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   padding: 0 20px;
 }
 
@@ -30,6 +32,10 @@ $header-border: 20px;
   display: block;
   height: 24px;
   width: auto;
+
+  @include large {
+    height: 33px;
+  }
 }
 
 .site-nav {
@@ -92,6 +98,10 @@ $header-border: 20px;
       border-width: 0;
       font-weight: bold;
     }
+
+    &:hover {
+      color: #b3b3b3;
+    }
   }
 
   &:first-child a { border-top: 0; }
@@ -105,23 +115,6 @@ $header-border: 20px;
       margin-right: 20px;
     }
   }
-}
-
-.site-nav-search {
-  width: 100%;
-  padding: 10px 20px;
-
-  @include large {
-    display: none;
-  }
-}
-
-.site-nav-search-input {
-  width: 100%;
-  display: block;
-  font-size: 14px;
-  line-height: 2;
-  padding: 2px 10px;
 }
 
 .site-nav-button {
@@ -149,21 +142,4 @@ $header-border: 20px;
 
 .site-nav-button-text {
   margin-right: 5px;
-}
-
-.site-nav-search-button {
-  display: none;
-  @include flexbox;
-  @include flex-direction(row);
-  @include align-items(center);
-  cursor: pointer;
-  color: #fff;
-  background: #a6a6a6;
-  border-radius: 3px;
-  padding: 0;
-  border: 0;
-
-  @include large {
-    display: block;
-  }
 }

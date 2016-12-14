@@ -1,15 +1,72 @@
-footer {
+.site-footer {
+  background: #262626;
+  @include flexbox;
+  @include flex-direction(column);
+  @include align-items(center);
 
-  background: #333;
+  @include large {
+    @include flex-direction(row);
+    @include justify-content(space-between);
+  }
+}
+
+.site-footer-logo {
+  display: block;
+  height: 33px;
+  width: auto;
+  padding: 20px;
+  -webkit-filter: grayscale(100%) brightness(0) invert(100%);
+  filter: grayscale(100%) brightness(0) invert(100%);
+  box-sizing: content-box;
+
+  @include large {
+    height: 24px;
+  }
+
+  @media only screen and (min-width: 700px) {
+    height: 33px;
+  }
+}
+
+.site-footer-nav {
+  @include flexbox;
+  @include flex-direction(column);
+  @include align-items(center);
+  width: 100%;
+
+  @include large {
+    width: auto;
+    display: block;
+    padding-right: 20px;
+    text-align: right;
+  }
 
   a {
+    display: block;
+    width: 100%;
+    background: #333;
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
-  }
+    border-top: solid 1px #404040;
+    border-bottom: solid 1px #262626;
+    font-family: $urbano-light;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 2.5;
+    text-transform: uppercase;
+    padding-left: 20px;
 
-  img {
-    filter: grayscale(100%) brightness(0) invert(100%);
-  }
+    @include large {
+      width: auto;
+      display: inline-block;
+      background: transparent;
+      border-width: 0;
+      line-height: 1.25;
+    }
 
+    &:hover {
+      color: #b3b3b3;
+    }
+  }
 }
