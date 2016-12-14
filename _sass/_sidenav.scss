@@ -32,4 +32,20 @@
     text-indent: 9px;
   }
 
+  .resources_v71,
+  .resources_v70,
+  .resources_v02,
+  .resources_v01,
+  .resources_vx {
+    display: none;
+  }
+
+  &.v71 .resources_v71,
+  &.v70 .resources_v70,
+  &.v02 .resources_v02,
+  &.v01 .resources_v01,
+  &.vx .resources_vx {
+    display: block;
+  }
+
 }
