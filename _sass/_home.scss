@@ -1,0 +1,135 @@
+.home-hero {
+
+  background-image: url($img-path + '/home/bg1.jpg');
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  display: table;
+  height: 560px;
+  width: 100%;
+
+  p {
+    color: #fff;
+    display: table-cell;
+    font-family: $urbano-black;
+    font-size: 56px;
+    font-weight: bold;
+    line-height: 15px;
+    margin-top: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    vertical-align: middle;
+
+    strong {
+      font-size: 144px;
+      line-height: 144px;
+      margin: 0;
+    }
+
+  }
+
+}
+
+.home-intro {
+  background: #404040;
+  color: #fff;
+  padding: 0 0 38px;
+  text-align: center;
+}
+
+.home-intro-pretext {
+  font-family: $urbano-light;
+  font-size: 41px;
+  font-weight: 100;
+  line-height: 20px;
+  padding-top: 51px;
+  margin: 0;
+}
+
+.home-intro-title {
+  font-size: 58px;
+  line-height: 54px;
+  margin: 10px 0 25px;
+}
+
+.home-intro-summary {
+  font-size: 24px;
+  line-height: 1.3em;
+  margin-bottom: 1.25em;
+  max-width: 790px;
+}
+
+.home-hero-2, .home-hero-3 {
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  height: 530px;
+  width: 100%;
+}
+
+.home-hero-2 {
+  background-image: url('/assets/images/home/bg2.jpg');
+}
+
+.home-hero-3 {
+  background-image: url('/assets/images/home/bg4.jpg');
+}
+
+.home-tech, .home-sdk {
+  padding: 4em 0;
+  text-align: center;
+
+  h2 {
+    color: #666;
+    font-size: 62px;
+    font-weight: bold;
+    line-height: 55px;
+    text-transform: uppercase;
+  }
+
+  > p {
+    max-width: 625px;
+  }
+
+}
+
+.home-tech-items-container {
+  display: flex;
+}
+
+.home-tech-items {
+  img {
+    display: block;
+    margin: 0 auto;
+    width: 160px;
+  }
+  strong {
+    font-weight: bold;
+  }
+  p {
+    font-size: 15px;
+    margin: 0;
+  }
+}
+
+.home-sdk {
+  text-align: center;
+  strong {
+    color: #666;
+    font-family: $urbano-condensed;
+    font-size: 110px;
+    font-weight: bold;
+    margin: 80px 0 0;
+  }
+}
+
+.home-sdk-items-container {
+  display: flex;
+  margin: 3em 0 0;
+}
+
+.home-sdk-item {
+  p {
+    margin-top: 0;
+  }
+}
