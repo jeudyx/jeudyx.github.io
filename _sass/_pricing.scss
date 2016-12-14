@@ -1,7 +1,82 @@
 .page-pricing {
 
-  h1 {
+  color: #666;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 4em 0;
 
+  h1, > p {
+    text-align: center;
+  }
+
+  td > p {
+    margin: 0;
+  }
+
+  h1 {
+    font-size: 45px;
+  }
+
+  th, td {
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  td {
+    border: 1px solid #fff;
+    padding: 20px;
+  }
+
+  th {
+    background: #fff;
+    font-family: $urbano-condensed;
+    font-size: 28px;
+    padding: 20px;
+    text-transform: uppercase;
+  }
+
+  th:first-child, td:first-child {
+    text-align: left;
+    padding-left: 20px;
+  }
+
+  tr:nth-child(odd) td {
+    background: #f7f7f7;
+  }
+
+  tr:nth-child(even) td {
+    background: rgb(237, 237, 237);
+  }
+
+  tr:not(:first-child) th {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .button {
+    display: block;
+    margin: 2em auto;
+  }
+
+  .no {
+    color: #b3b3b3;
+    font-size: 44px;
+    font-weight: 600;
+  }
+
+  .yes:before {
+    content: '\e800';
+    font-family: fontello;
+    font-weight: 200;
+    font-size: 36px;
+    color: #00a336;
+  }
+
+  .no:before {
+    content: '\00d7';
+    padding-top: 2px;
+    display: inline-block;
+    vertical-align: middle;
   }
 
 }

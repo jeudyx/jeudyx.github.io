@@ -27,3 +27,11 @@
   font-family: "Urbano Light";
   src: url($font-path + "/Urbano-Light.otf") format("opentype");
 }
+
+@font-face {
+  font-family: "fontello";
+  src: url($font-path + "/fontello.eot?") format("eot"),
+    url($font-path + "/fontello.woff") format("woff"),
+    url($font-path + "/fontello.ttf") format("truetype"),
+    url($font-path + "/fontello.svg") format("svg");
+}
