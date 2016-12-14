@@ -12,15 +12,12 @@ function handleVersionChange (evt) {
   var version = evt.target.value
   sideNav.classList.remove('v71', 'v70', 'v01', 'v02', 'vx')
   sideNav.classList.add(version)
+  document.body.scrollTop = document.documentElement.scrollTop = 0;
 }
 
-function initSideNav () {
-  var defaultVersion = 'v71'
-  sideNav.classList.add(stored || defaultVersion)
-}
-
-siteNavButton.addEventListener('click', toggleSiteNav)
-siteNavButton.addEventListener('touchstart', toggleSiteNav)
-versionSelect.addEventListener('change', handleVersionChange)
-
-document.addEventListener('DOMContentLoaded', initSideNav)
+document.addEventListener('DOMContentLoaded', function () {
+  siteNavButton.addEventListener('click', toggleSiteNav)
+  siteNavButton.addEventListener('touchstart', toggleSiteNav)
+  versionSelect.addEventListener('change', handleVersionChange)
+  sideNav.classList.add('v71')
+})
