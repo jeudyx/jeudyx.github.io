@@ -4,14 +4,17 @@
 @import 'reset';
 @import 'vars';
 @import 'fonts';
+@import 'flex';
+@import 'mixins';
 
 /* additional resets */
-* {
-  box-sizing: inherit;
-}
 
 html {
   box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
 }
 
 @import 'typography';
