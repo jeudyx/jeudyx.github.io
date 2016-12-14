@@ -6,15 +6,18 @@
   <body>
     {% include header.html %}
 
-    <article class="blog-content">
-      <h2>{{ page.title }}</h2>
-      <p class="blog-date">
-        {{ page.date | timeago }}
-      </p>
-      <section>
-        {{ content }}
-      </section>
-    </article>
+    <div class="content">
+      <article class="blog-content">
+        <h2>{{ page.title }}</h2>
+        <p class="blog-date">
+          {{ page.date | timeago }}
+        </p>
+        <section>
+          {{ content }}
+        </section>
+      </article>
+    </div>
+
     {% include footer.html %}
   </body>
 

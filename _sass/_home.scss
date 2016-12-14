@@ -1,16 +1,17 @@
 .home-hero {
+  @include flexbox;
+  @include align-items(center);
+  @include justify-content(center);
 
   background-image: url($img-path + '/home/bg1.jpg');
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
-  display: table;
   height: 560px;
   width: 100%;
 
   p {
     color: #fff;
-    display: table-cell;
     font-family: $urbano-black;
     font-size: 56px;
     font-weight: bold;
