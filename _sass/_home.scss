@@ -7,8 +7,13 @@
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
-  height: 560px;
+  height: 400px;
+  max-height: 40vh;
   width: 100%;
+
+  @include large {
+    height: 560px;
+  }
 
   p {
     color: #fff;
@@ -21,10 +26,20 @@
     text-transform: uppercase;
     vertical-align: middle;
 
+    @include large {
+      font-size: 56px;
+      line-height: 15px;
+    }
+
     strong {
       font-size: 13vw;
       line-height: 13vw;
       margin: 0;
+
+      @include large {
+        font-size: 144px;
+        line-height: 144px;
+      }
     }
 
   }
@@ -95,10 +110,16 @@
 }
 
 .home-tech-items-container {
-  display: flex;
+  @include flexbox;
+  @include flex-direction(row);
+  @include align-items(center);
+  @include justify-content(center);
+  @include flex-wrap(wrap);
 }
 
 .home-tech-items {
+  flex: 0 0 200px;
+
   img {
     display: block;
     margin: 0 auto;
@@ -125,11 +146,16 @@
 }
 
 .home-sdk-items-container {
-  display: flex;
+  @include flexbox;
+  @include flex-direction(row);
+  @include align-items(center);
+  @include justify-content(center);
+  @include flex-wrap(wrap);
   margin: 3em 0 0;
 }
 
 .home-sdk-item {
+  width: 300px;
   p {
     margin-top: 0;
   }
