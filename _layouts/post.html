@@ -10,7 +10,7 @@
       <article class="blog-content">
         <h2>{{ page.title }}</h2>
         <p class="blog-date">
-          {{ page.date | timeago }}
+          {{ page.date | date: '%B %d, %Y' }}
         </p>
         <section>
           {{ content }}

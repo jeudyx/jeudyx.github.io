@@ -1,0 +1,19 @@
+.page-faq {
+  padding: 4em 0;
+
+  > section > strong {
+    display: block;
+  }
+
+  > section > p {
+    margin: .5em 0 2em;
+  }
+
+}
+
+.page-faq-help {
+  float: right;
+  a {
+    width: 100px;
+  }
+}
