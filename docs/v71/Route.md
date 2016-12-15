@@ -52,7 +52,7 @@ Returns information about routes, which are user-defined or automatically genera
 | `created_datetime`    | The time the route was created | text |  | **GET**: required, **PUT**: required |
 | `updated_datetime`    | The last time the route was updated | text |  | **GET**: required, **PUT**: required |
 
-###### Example values
+###### Example values <a name="examplevalues"></a>
 
 `starting_location`
 
@@ -67,8 +67,8 @@ Returns information about routes, which are user-defined or automatically genera
 
 | Name              | Description          | Type      | Units               | HTTP Support                                                                        |
 |--------------     |----------------------|-----------|---------------------|-------------------------------------------------------------------------------------|
-| `points`          | Point data.  See [Example values][] | text | Meters | **GET**: required, **PUT**: required |
-| `climbs`          | Read-Only and present after calculations.  See [Example values][] | text | Meters | **GET**: required, **PUT**: required |
+| `points`          | Point data.  See [Example values](#examplevalues) | text | Meters | **GET**: required, **PUT**: required |
+| `climbs`          | Read-Only and present after calculations.  See [Example values](#examplevalues) | text | Meters | **GET**: required, **PUT**: required |
 | `total_ascent`    | Read-Only and present after calculations. Total descent calculated in the route in meters | text | Meters | **GET**: required, **PUT**: required |
 | `total_descent`   | Read-Only and present after calculations. Total descent calculated in the route | text | Meters | **GET**: required, **PUT**: required |
 | `min_elevation`   | Read-Only and present after calculations. Minimum elevation found in the route | text | Meters | **GET**: required, **PUT**: required |
@@ -155,7 +155,7 @@ The following query parameters only apply to GET
 | `city`                | Specify the city to only search for routes in a given city.                                                                                                       | text          | No   |
 | `state`               | Specify the state to only search for routes in a given state.                                                                                                     | text          | No   |
 | `country`             | Specify the country to only search for routes in a given country.                                                                                                 | number        | No   |
-| `field_set`           | Specifies the set of fields to be returned. Valid values are `default` (the default if not specified) or `detailed`. See more details under [Item properties][]   | text          | No   |
+| `field_set`           | Specifies the set of fields to be returned. Valid values are `default` (the default if not specified) or `detailed`. See more details under [Item properties](#itemproperties)   | text          | No   |
 | `text_search`         | Searches for routes where the name or the description attribute contains the value provided.                                                                      | text          | No   |
 | `order_by`            | Specify the order of the returned results. Valid values are `distance`, `distance_from_point`, `date_created`, `date_updated`, `text_match`. The value may be prepended with a `-/+` modifier indicating descending or ascending, respectively.  | text          | No   |
 
