@@ -43,7 +43,7 @@ If you have example code in other languages you'd like us to share, submit a pul
 
 [RFC 6749]: http://tools.ietf.org/html/rfc6749
 [examples repository]: https://github.com/mapmyfitness/api-examples
-[Oauth 2 Introduction]: /docs/OAuth_2_Intro
+[Oauth 2 Introduction]: /docs/v71_OAuth_2_Intro
 [OAuth 2 Demo]: https://github.com/mapmyfitness/api-examples/blob/master/python/oauth2_authorization_demo.py
 
 ## Tutorial
@@ -146,7 +146,7 @@ Downloading/unpacking ipython
     Successfully installed ipython
     Cleaning up...
 ```
-    
+
 ```bash
     pip install requests requests-oauthlib
 ```
@@ -320,7 +320,7 @@ Verify you have an Access Token.
 
 
 ```
- 
+
 ```
 
 ### Step 8: Client Application: Request a resource on behalf of the user with his Access Token

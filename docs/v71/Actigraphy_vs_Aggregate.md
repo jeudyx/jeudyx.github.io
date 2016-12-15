@@ -8,7 +8,7 @@ docs_version: v71
 # Actigraphy vs. Aggregate
 
 The Under Armour Connected Fitness platform provides two ways to get activity
-data over time: [Actigraphy](/docs/{{ page.docs_version }}/Actigraphy) and
+data over time: [Actigraphy](/docs/{{ page.docs_version }}_Actigraphy) and
 [Aggregate](/docs/{{ page.docs_version }}/Aggregate).
 
 
@@ -53,6 +53,6 @@ each end point to be sure, but as of this writing, the comparison is as follows:
 
 
 † Not necessarily 24 hours. See
-[the Actigraphy documentation](/docs/{{ page.docs_version }}/Actigraphy) for more details.
+[the Actigraphy documentation](/docs/{{ page.docs_version }}_Actigraphy) for more details.
 
 ‡ Not explicitly, but can be computed.

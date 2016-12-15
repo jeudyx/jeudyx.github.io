@@ -8,7 +8,7 @@ todo: pinned links to Image, Privacy and Filemobile Session
 title: Activity Story
 layout: documentation
 path_version: api/0.2
-docs_version: 02
+docs_version: '02'
 permalink: /docs/02_Activity_Story/
 doc_uri: 02_Activity_Story/
 ---
