@@ -28,7 +28,7 @@ This resource is used to update {{ page.title }}s. It also includes links to the
 `GET` Retrieve a [User](/docs/{{ page.docs_version }}_User/)'s profile photo
 `PUT` Update a [User](/docs/{{ page.docs_version }}_User/)'s profile photo
 
-### Item links
+### Item links <a name="itemlinks"></a>
 
 `small_image` Small profile image for display
 `medium_image` Medium profile image for display

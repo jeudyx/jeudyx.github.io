@@ -25,7 +25,7 @@ This resource allows creation and modification of {{page.title}} entries.  {{pag
 * `GET` Retrieve a {{page.title}} by id
 
 
-### Item properties
+### Item properties <a name="itemproperties"></a>
 
 | Name                | Description                                                                                                                      | Type             | Units    | HTTP Support                         |
 | ---                 | ---                                                                                                                              | ---              | ---      | ---                                  |
@@ -41,7 +41,7 @@ This resource allows creation and modification of {{page.title}} entries.  {{pag
 | `lean_mass`         | The user's total mass that *is not* fat.                                                                                         | String           | Kilogram | **GET**: optional, **PUT**: optional |
 | `fat_mass`          | The user's total mass that *is* fat.                                                                                             | String           | Kilogram | **GET**: optional, **PUT**: optional |
 
-### Item links
+### Item links <a name="itemlinks"></a>
 
 * `self` A link to this resource
 * `user` A link to the User resource that owns the {{page.title}}
@@ -77,7 +77,7 @@ This resource allows creation and modification of {{page.title}} entries.  {{pag
 
 ### Embedded collections
 
-* `bodymasses` A collection of {{page.title}}es with properties as described under [Item properties][] and links as described under [Item links][]
+* `bodymasses` A collection of {{page.title}}es with properties as described under [Item properties](#itemproperties) and links as described under [Item links](#itemlinks)
 
 
 ## Usage

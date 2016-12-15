@@ -25,7 +25,7 @@ This resource allows retrieval of activities bucketed by user's day. Also see [`
 `GET` Get an {{page.title}} by id
 `PUT` Replace an existing {{page.title}} by id
 
-### Item properties
+### Item properties <a name="itemproperties"></a>
 
 | Name                 | Description                                                              | Type     | Units        | HTTP Support      |
 |----------------------|--------------------------------------------------------------------------|----------|--------------|-------------------|
@@ -44,7 +44,7 @@ This resource allows retrieval of activities bucketed by user's day. Also see [`
 | `aggregates.total_active_time`| Total time of the Activity                                      | integer | N/A | **GET**: optional **POST**: optional **PUT**: optional|
 | `timezones` |  List of user timezone events that intersect with the time represented by this Activity. The first item of each tuple represents the event's epoch timestamp and the second item is the IANA Time Zone Database formatted string for the event.| Array | N/A | **GET**: required, **PUT**: optional, **POST**: required |
 
-### Item links
+### Item links <a name="itemlinks"></a>
 
 `self` A link to this resource  
 `user` A link to the User resource that owns the activity

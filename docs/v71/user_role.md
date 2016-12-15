@@ -34,7 +34,7 @@ A role represents a collection of permissions (see [Role](/docs/{{ page.docs_ver
 * `DELETE` Delete a {{ page.title }} by id
 
 
-### Item links
+### Item links <a name="itemlinks"></a>
 
 * `self` A link to this resource
 * `user` A link to the User resource that owns the {{ page.title }}

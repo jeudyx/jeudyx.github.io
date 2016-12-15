@@ -245,7 +245,7 @@ E.g., `application.workouts => workout`.
 * `PUT` Update a {{page.title}}s entity
 
 
-### Item properties
+### Item properties <a name="itemproperties"></a>
 
 | Name                | Description                                                             | Type     | HTTP Support                         |
 | ---                 | ---                                                                     | ---      | ---                                  |
@@ -296,7 +296,7 @@ E.g., `application.workouts => workout`.
 
 ### Embedded collections
 
-* `{{page.title}}s` A collection of {{page.title}}s with properties as described under [Item properties][].
+* `{{page.title}}s` A collection of {{page.title}}s with properties as described under [Item properties](#itemproperties).
 
 
 ## Usage

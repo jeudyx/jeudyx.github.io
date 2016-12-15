@@ -1,12 +1,12 @@
 ---
 layout: default
-title: Under Armour Developer Blog
+title: Blog
 permalink: /blog/
 ---
 
 <section>
   {% for post in site.posts %}
-    <article class="blog-content">
+    <article class="blog-content container">
       <h2>
         <a href="{{ post.url }}">{{ post.title }}</a>
       </h2>
@@ -14,7 +14,6 @@ permalink: /blog/
         {{ post.date | date: '%B %d, %Y' }}
       </p>
       {{ post.content | markdownify }}
-      <hr>
     </article>
   {% endfor %}
 </section>
