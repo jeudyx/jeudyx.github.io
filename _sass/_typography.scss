@@ -1,37 +1,71 @@
 body {
   color: #333;
   font-family: $urbano-regular;
-  font-size: 18px;
+  font-size: 14px;
+  line-height: 1.5em;
   -webkit-font-smoothing: antialiased;
 }
 
-h1, h2, h4 {
+@media (min-width: 560px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: $urbano-condensed;
   font-weight: bold;
-  line-height: 1.5em;
-  text-transform: uppercase;
+  line-height: 1.1em;
+  margin-bottom: .5em;
 }
 
 h1 {
-  font-size: 38px;
-  margin-bottom: 1em;
+  font-size: 2.5rem;
+  text-transform: uppercase;
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.75rem;
 }
 
 h4 {
-  font-size: 20px;
+  font-size: 1.5rem;
   text-transform: none;
 }
 
+h5 {
+  font-size: 1.25rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
 p {
-  margin: 1.25em auto;
-  line-height: 1.5em;
+  margin-top: 0;
+  margin-bottom: 1em;
 }
 
 a {
   color: #006fc6;
   text-decoration: none;
+}
+
+ul {
+  padding-left: 40px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+li {
+  list-style-type: disc;
+  list-style-position: outside;
+}
+
+.text-center {
+  text-align: center;
 }

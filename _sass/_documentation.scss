@@ -1,27 +1,11 @@
 .documentation {
 
-  h1 {
-    margin: 0;
-    font-size: 38px;
-  }
-
-  h2 {
-    text-transform: none;
+  h2:not(:first-child) {
+    margin-top: 3rem;
   }
 
   h3 {
-    font-family: "Urbano Bold Condensed","Open Sans",sans-serif;
-    font-size: 24px;
-    line-height: 1.3em;
-  }
-
-  p {
-    margin: 0 auto 1.25em;
-  }
-
-  code {
-    font-family: "Courier New", Courier, monospace;
-    font-size: 1em;
+    margin-top: 1.5rem;
   }
 
   table {
@@ -48,6 +32,10 @@
     vertical-align: top;
   }
 
+  code {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 1em;
+  }
 
   pre {
     font-size: 14px;
@@ -55,23 +43,6 @@
 
 }
 
-.page-docs {
-  h1, h1 + p {
-    text-align: center;
-  }
-  h1 + p {
-    font-size: 24px;
-    margin: 1em 0 2em;
-  }
-  ul {
-    margin: 1em 0 1em 2em;
-  }
-  li {
-    list-style-type: disc;
-    list-style-position: outside;
-    margin: .5em 0;
-  }
-}
 .page-docs-img {
   float: right;
   display: block;
