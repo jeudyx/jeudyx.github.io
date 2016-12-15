@@ -1,6 +1,6 @@
 ---
 layout: documentation
-title: 24/7 Tracking: Reading Data
+title: 24/7 Tracking - Reading Data
 permalink: /docs/v71_24_7_tracking_reading_tutorial/
 version: v7.1
 ---

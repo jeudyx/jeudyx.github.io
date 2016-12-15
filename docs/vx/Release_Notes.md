@@ -13,7 +13,7 @@ breaking changes made between versions in these notes.  Of note is that any
 change in the version INCLUDING minor revisions will have interface and 
 breaking changes.  Most new API versions will only change a few endpoints.
 
-# v7.1 Feb 11, 2015
+##v7.1 Feb 11, 2015
 
 v7.1 was added to standardize the way resources link to each other through
 HAL.
@@ -34,7 +34,7 @@ NEW FEATURES:
     {"privacy": "/v7.1/privacy_option/<id>/"}
     ```
 
-# v7.0 Feb 1, 2015
+## v7.0 Feb 1, 2015
 
 OAuth 2.0 has worked well for all new integrations.  We have added a token 
 exchange endpoint and announced an end of life to OAuth 1.0a
@@ -44,7 +44,7 @@ NEW FEATURES:
 
 - Data Source Resource
 
-# v7.0 Jan 1, 2015
+## v7.0 Jan 1, 2015
 
 Release of Heart Rate and Page features.
 
@@ -59,14 +59,14 @@ NEW FEATURES:
 - Page Association Resource
 - Page Type Resource
 
-# v7.0 Dec 1, 2014
+## v7.0 Dec 1, 2014
 
 NEW FEATURES:
 
 - Role Resource
 - User Role Resource
 
-# v7.0 Nov 1, 2014
+## v7.0 Nov 1, 2014
 
 Release of 24/7 data and groups on platform.
 
@@ -87,7 +87,7 @@ NEW FEATURES:
 - Remote Connection Resource
 - Remote Connection Type Resource
 
-# v7.0 Oct 1, 2014
+## v7.0 Oct 1, 2014
 
 Webhooks were added so 3rd parties can subscribe to workout updates.  More signals 
 will be added in the future based on requests.  
@@ -99,20 +99,20 @@ NEW FEATURES:
 - Moderation Action
 - Moderation Action Type
 
-# v7.0 June 1, 2014
+## v7.0 June 1, 2014
 
 OAuth 2.0 was added to the v7.0 API plane.  After having integration challenges
 with Oauth 1.0a we decided to move to OAuth 2.0 which has much better client
 library support.
 
-# v7.0 Nov 1, 2013
+## v7.0 Nov 1, 2013
 
 NEW FEATURES:
 
 - Route Bookmark Resource
 - User Stats Resource
 
-# v7.0 Oct 1, 2013
+## v7.0 Oct 1, 2013
 
 v7.0 is the first release of a full featured public, restful API from Under
 Armour Connected Fitness.  It is secured with OAuth 1.0a.

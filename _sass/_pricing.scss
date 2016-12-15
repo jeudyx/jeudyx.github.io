@@ -1,20 +1,7 @@
 .page-pricing {
 
-  color: #666;
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 4em 0;
-
-  h1, > p {
-    text-align: center;
-  }
-
   td > p {
     margin: 0;
-  }
-
-  h1 {
-    font-size: 45px;
   }
 
   th, td {
@@ -60,7 +47,6 @@
 
   .no {
     color: #b3b3b3;
-    font-size: 44px;
     font-weight: 600;
   }
 
@@ -68,7 +54,6 @@
     content: '\e800';
     font-family: fontello;
     font-weight: 200;
-    font-size: 36px;
     color: #00a336;
   }
 
