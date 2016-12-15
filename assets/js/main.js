@@ -31,7 +31,18 @@ document.addEventListener('DOMContentLoaded', function () {
     versionSelect.addEventListener('change', handleVersionChange)
   }
 
-  if (sideNav) { sideNav.classList.add('v71') }
+  if (sideNav) {
+    var pattern = /\?version\=(\w+)/
+    var qs = window.location.search
+    var override = qs.match(pattern)
+    var version = 'v71' // default
+
+    if (override && override[1]) {
+      version = override[1]
+    }
+
+    sideNav.classList.add(version)
+  }
 
   initActiveClass()
 })
