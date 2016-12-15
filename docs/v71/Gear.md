@@ -26,7 +26,7 @@ and apparel used for fitness.
 * `DELETE` Delete a {{page.title}} by id
 
 
-### Item properties
+### Item properties <a name="itemproperties"></a>
 
 | Name                     | Description                                                        | Type     | Units   | HTTP Support                         |
 | ---                      | ---                                                                | ---      | ---     | ---                                  |
@@ -64,7 +64,7 @@ and apparel used for fitness.
 | `field_name`             | description of field                                               | String   | N/A     | **GET**: required, **PUT**: required |
 
 
-### Item links
+### Item links <a name="itemlinks"></a>
 
 * `self` A link to this resource
 * `user` A link to the User resource that owns the {{page.title}}
@@ -100,7 +100,7 @@ and apparel used for fitness.
 
 ### Embedded collections
 
-* `gears` A collection of {{page.title}}s with properties as described under [Item properties][] and links as described under [Item links][]
+* `gears` A collection of {{page.title}}s with properties as described under [Item properties](#itemproperties) and links as described under [Item links](#itemlinks)
 
 
 ## Usage

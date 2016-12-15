@@ -30,7 +30,7 @@ Provides images to be displayed upon maps to mark landmarks and distance, curren
 | `format` | Specifies the output format of the image. Valid values are `json` (the default if not specified) or `png`. | text | No   |
 | `txt` | Specifies the text that should be composited onto marker ID 0 | text | No   |
 
-### Item properties
+### Item properties <a name="itemproperties"></a>
 
 | Name         | Description          | Type      | HTTP Support                                                                        |
 |--------------|----------------------|-----------|-------------------------------------------------------------------------------------|
@@ -39,7 +39,7 @@ Provides images to be displayed upon maps to mark landmarks and distance, curren
 |`description`| The description of the map marker | text | **GET**: required |
 |`image_link`| The link to the png format of the marker | href | **GET**: required |
 
-### Item links
+### Item links <a name="itemlinks"></a>
 
 ``image`` Link to the image in png format
 
@@ -74,7 +74,7 @@ Provides images to be displayed upon maps to mark landmarks and distance, curren
 
 ### Embedded collections
 
-`map_marker_images` A collection of map_marker_image details with properties as described under [Item properties][] and links as described under [Item links][]
+`map_marker_images` A collection of map_marker_image details with properties as described under [Item properties](#itemproperties) and links as described under [Item links](#itemlinks)
 
 ## Usage
 

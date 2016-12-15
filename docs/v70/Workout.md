@@ -28,7 +28,7 @@ deliberate physical activity, as opposed to accumulating steps by passively walk
 
 `field_set` Optional.  Options available are: ['time_series'].
 
-### Item properties
+### Item properties <a name="itemproperties"></a>
 
 | Name                                | Description                                                                                                                                                                                                                                                                                                                        | Type                                                      | Units                                        | HTTP Support                                                                                                                                                     |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------|----------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -71,7 +71,7 @@ deliberate physical activity, as opposed to accumulating steps by passively walk
 | `time_series.power`                 | The power measurement at each individual discrete point during the {{page.title}}.                                                                                                                                                                                                                                                        | Array of power tuples                                     | watts                                        | **GET:** optional **POST:** optional **PUT:** optional                                                                                                           |
 | `time_series.timer_stop`            | A timer_stop tuple indicates the the {{page.title}} was paused for some length of time. The beginning of the pause should be the offset, and the duration of the pause should be the value in seconds. The client is responsible for including timer_stop when writing a {{page.title}}.                                                         | Array of timer_stop tuples                                | seconds                                      | **GET:** optional **POST:** optional **PUT:** optional                                                                                                           |
 
-### Item links
+### Item links <a name="itemlinks"></a>
 
 `self` A link to this resource  
 `user` A link to the User resource that owns the {{page.title}}  
@@ -116,7 +116,7 @@ deliberate physical activity, as opposed to accumulating steps by passively walk
 
 ### Embedded collections
 
-`{{page.title}}s` A collection of {{page.title}}s with properties as described under [Item properties][] and links as described under [Item links][]
+`{{page.title}}s` A collection of {{page.title}}s with properties as described under [Item properties](#itemproperties) and links as described under [Item links](#itemlinks)
 
 ## Usage
 

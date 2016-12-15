@@ -23,7 +23,7 @@ This resource provides access to a user's {{page.title}} settings.
 
 `GET` Retrieve a {{page.title}} by id  
 
-### Item properties
+### Item properties <a name="itemproperties"></a>
 
 | Name         | Description          | Type      | HTTP Support                                                       |
 |--------------|----------------------|-----------|--------------------------------------------------------------------|
@@ -49,7 +49,7 @@ This resource provides access to a user's {{page.title}} settings.
 }
 ```
 
-### Item links
+### Item links <a name="itemlinks"></a>
 
 `self` A link to this resource  
 `user` A link to the User resource that owns the {{page.title}}
@@ -80,7 +80,7 @@ This resource provides access to a user's {{page.title}} settings.
 
 ### Embedded collections
 
-`heart_rate_zones` A collection of {{page.title}} with properties as described under [Item properties][] and links as described under [Item links][]
+`heart_rate_zones` A collection of {{page.title}} with properties as described under [Item properties](#itemproperties) and links as described under [Item links](#itemlinks)
 
 ## Usage
 

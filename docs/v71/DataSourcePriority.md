@@ -32,7 +32,7 @@ id `98765`.
 * `GET` Retrieve {{page.title}} by id
 
 
-### Item properties
+### Item properties <a name="itemproperties"></a>
 
 | Name            | Description                     | Type   | Units | HTTP Support                         |
 | ---             | ---                             | ---    | ---   | ---                                  |
@@ -46,7 +46,7 @@ id `98765`.
 Valid values are `sleep`, `activity`
 
 
-### Item links
+### Item links <a name="itemlinks"></a>
 
 * `self` A link to this resource
 * `data_source` A link to the related [Data Source](/docs/{{page.versionhref}}_Data_Source)

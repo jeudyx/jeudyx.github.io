@@ -30,7 +30,7 @@ Returns {{page.title}}s that a given user has earned on courses.
 
 `user_achievement` A collection of `UserAchievement` items.
 
-### Item properties
+### Item properties <a name="itemproperties"></a>
 
 | Parameter          | Description                                      | Type                                 |
 |--------------------|--------------------------------------------------|--------------------------------------|

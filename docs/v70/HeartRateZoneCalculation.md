@@ -17,7 +17,7 @@ Calculates Heart Rate Zones given an age or a maximum heart rate.
 
 ## Item
 
-### Item properties
+### Item properties <a name="itemproperties"></a>
 
 | Name         | Description          | Type      | HTTP Support                                                       |
 |--------------|----------------------|-----------|--------------------------------------------------------------------|
@@ -41,7 +41,7 @@ Calculates Heart Rate Zones given an age or a maximum heart rate.
 ]
 ```
 
-### Item links
+### Item links <a name="itemlinks"></a>
 
 `self` A link to this resource  
 
@@ -67,7 +67,7 @@ Calculates Heart Rate Zones given an age or a maximum heart rate.
 
 ### Embedded collections
 
-`heart_rate_zone_calculations` A collection of {{page.title}}s with properties as described under [Item properties][] and links as described under [Item links][]
+`heart_rate_zone_calculations` A collection of {{page.title}}s with properties as described under [Item properties](#itemproperties) and links as described under [Item links](#itemlinks)
 
 ## Usage
 

@@ -53,7 +53,7 @@ This resource allows retrieval of activities bucketed by user's day.  Also see `
 `activities` A collection of activities with properties as described under `Item properties`
 
 
-### Item properties
+### Item properties <a name="itemproperties"></a>
 
 | Name                                | Description                                                                                                          | Type                 | Units        |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------------|----------------------|--------------|
@@ -72,7 +72,7 @@ This resource allows retrieval of activities bucketed by user's day.  Also see `
 | `aggregates.total_calories`         | The total cumulative metabolic energy burned during the activity.                                                                                                                                                                                                                                                                   | Number (integer)                                          | joules                                       | **GET:** optional **POST:** optional **PUT:** optional                                                                                                           |
 
 
-### Item links
+### Item links <a name="itemlinks"></a>
 
 `user` A link to the User resource that owns the activity
 

@@ -32,7 +32,7 @@ Retrieve and update {{ page.title }} information
 
 ### Item query parameters
 
-### Item properties
+### Item properties <a name="itemproperties"></a>
 
 | Name           | Description                                                                                 | Type       | HTTP Support                                           |
 |----------------|---------------------------------------------------------------------------------------------|------------|--------------------------------------------------------|
@@ -80,7 +80,7 @@ Retrieve and update {{ page.title }} information
 | `introduction`   | The {{ page.title }}'s introduction statement | string |  | **GET:**authed {{ page.title }} and friends |
 | `last_name`      | The {{ page.title }}'s last name              | string |  | **GET:**authed {{ page.title }} and friends |
 
-### Item links
+### Item links <a name="itemlinks"></a>
 
 | Link                    | Required | Description                                                                                                                                                                                                                        |
 |-------------------------|----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

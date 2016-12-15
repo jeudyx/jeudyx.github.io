@@ -42,7 +42,7 @@ Data Source.
 None
 
 
-### Item properties
+### Item properties <a name="itemproperties"></a>
 
 | Name                         | Description                                           | Type    | Units | HTTP Support                                             |
 | ---                          | ---                                                   | ---     | ---   | ---                                                      |
@@ -60,7 +60,7 @@ deleted at the same time. Also, inactive Data Sources will not show up in the
 collection listing.
 
 
-### Item links
+### Item links <a name="itemlinks"></a>
 
 * `self` A link to this resource.
 * `device` A link to the [Device](/docs/(versionhref}}_Device) resource.
@@ -101,7 +101,7 @@ This list is sorted by date added, and it is not an option to change the order.
 ### Embedded collections
 
 * `Data Sources` A collection of Data Sources with properties as described under
-  [Item properties][] and links as described under [Item links][].
+  [Item properties](#itemproperties) and links as described under [Item links](#itemlinks).
 * `Device` A collection of [Devices](/docs/(versionhref}}_Device).
 
 

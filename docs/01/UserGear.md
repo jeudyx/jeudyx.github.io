@@ -27,7 +27,7 @@ This resource allows creation and modification of user gear.
 * `DELETE` Delete a {{page.title}}
 
 
-### Item Properties
+### Item properties <a name="itemproperties"></a>
 
 | Name                 | Description                                                    | Type                                            | Units | HTTP Support      |
 | ---                  | ---                                                            | ---                                             | ---   | ---               |
@@ -42,7 +42,7 @@ This resource allows creation and modification of user gear.
 | `gender`             | The gender the gear was designed for.                          | string                                          |       | **PUT:** Optional |
 
 
-### Item Links
+### Item links <a name="itemlinks"></a>
 
 * `self` A link to this resource
 * `user` A link to the User resource that owns the usergear

@@ -21,7 +21,7 @@ Provides Heart Rate Zone data associated with a workout.
 
 `GET` Retrieve a {{page.title}} by id  
 
-### Item properties
+### Item properties <a name="itemproperties"></a>
 
 | Name         | Description          | Type      | Units               | HTTP Support                                 |
 |--------------|----------------------|-----------|---------------------|----------------------------------------------|
@@ -31,7 +31,7 @@ Provides Heart Rate Zone data associated with a workout.
 | `time_in_zone4` | Time spent in Heart Rate Zone 4 | number | seconds | **GET**: required |
 | `time_in_zone5` | Time spent in Heart Rate Zone 5 | number | seconds | **GET**: required |
 
-### Item links
+### Item links <a name="itemlinks"></a>
 
 `self` A link to this resource  
 `user` A link to the User resource that owns the {{page.title}}

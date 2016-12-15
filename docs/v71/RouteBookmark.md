@@ -24,7 +24,7 @@ This resource provides {{page.title}}s created by users as a list of links to Ro
 `GET` Retrieve a {{page.title}} by id  
 `DELETE` Delete a {{page.title}} by id
 
-### Item links
+### Item links <a name="itemlinks"></a>
 
 `route` The route being bookmarked  
 `user` The user that created the bookmark

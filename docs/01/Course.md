@@ -29,9 +29,9 @@ Returns information about {{page.title}}s, which are user-defined or automatical
 | `thumbnail`        | Specify `True` if you would like the {{page.title}} thumbnail link to be included in the response. Defaults to `False`.                                               | boolean | Optional |
 | `thumbnail_width`  | In pixels. Ignored unless `thumbnail` is `True`. Defaults to `60`.                                                                                            | int     | Optional |
 | `thumbnail_height` | In pixels. Ignored unless `thumbnail` is `True`. Defaults to `60`.                                                                                            | int     | Optional |
-| `field_set`        | Specifies the set of fields to be returned. Valid values are `default` (the default if not specified) or `minimal`. See more details under [Item properties][] | string  | Optional |
+| `field_set`        | Specifies the set of fields to be returned. Valid values are `default` (the default if not specified) or `minimal`. See more details under [Item properties](#itemproperties) | string  | Optional |
 
-### Item properties
+### Item properties <a name="itemproperties"></a>
 
 ##### Properties provided for field_set `minimal`
 
@@ -61,7 +61,7 @@ Returns information about {{page.title}}s, which are user-defined or automatical
 | `start_index` | The indexes of the user's workout route where they crossed the start of the {{page.title}} | number | **GET:** Required |
 | `end_index`   | The indexes of the user's workout route where they crossed the end of the {{page.title}}   | number | **GET:** Required |
 
-### Item links
+### Item links <a name="itemlinks"></a>
 
 `creator` Link to the user resource of the user that created the {{page.title}}
 
@@ -80,7 +80,7 @@ Returns information about {{page.title}}s, which are user-defined or automatical
 | `{{page.title}}`          | Direct search for the specified {{page.title}}s. Can be specified as either the {{page.title}} ID or its resource href. May specify multiple values by either repeating the parameter in the query or by providing a comma-delimited list within a single `course` parameter. | `id`/`href` | One of this, `workout`, or `route` are required |
 | `thumbnail`       | Specify `True` if you would like the {{page.title}} thumbnail link to be included in the response. Defaults to `False`.                                                                                                                                               | boolean     | Optional                                        |
 | `thumbnail_width` | In pixels. Ignored unless `thumbnail` is `True`. Defaults to `60`.                                                                                                                                                                                            | int         | Optional                                        |
-| `field_set`       | Specifies the set of fields to be returned. Valid values are `default` (the default if not specified) or `minimal`. See more details under [Item properties][]                                                                                                 | string      | Optional                                        |
+| `field_set`       | Specifies the set of fields to be returned. Valid values are `default` (the default if not specified) or `minimal`. See more details under [Item properties](#itemproperties)                                                                                                 | string      | Optional                                        |
 
 ### Collection properties
 
@@ -94,7 +94,7 @@ None
 
 ### Embedded collections
 
-`courses` A collection of {{page.title}} items with properties as described under [Item properties][] and links as described under [Item links][]
+`courses` A collection of {{page.title}} items with properties as described under [Item properties](#itemproperties) and links as described under [Item links](#itemlinks)
 
 ## Usage
 

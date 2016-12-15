@@ -18,7 +18,7 @@ and grouped at a specified period.
 
 ## Item
 
-### Item properties
+### Item properties <a name="itemproperties"></a>
 
 | Name             | Description                                                                                                                                                                                                                                                                                              | Type              | HTTP Support      |
 | ---              | ---                                                                                                                                                                                                                                                                                                      | ---               | ---               |
@@ -28,7 +28,7 @@ and grouped at a specified period.
 | `summary`        | A dictionary of summary data for the aggregate window. Contains "start_datetime", "end_datetime", and "values" which is a list of dictionaries containing each data_type's values for the array of items in the summary.                                                                                 | json              | **GET**: required |
 | `periods`        | A list of aggregate data over the aggregate window grouped by the provided period. Similarly to the summary field each item in the list contains "start_datetime", "end_datetime", and "values" which is a list of dictionaries containing each data_type's values for the array of items in the period. | list              | **GET**: required |
 
-### Item links
+### Item links <a name="itemlinks"></a>
 
 * `self` A link to this resource
 * `user` A link to the User resource that owns the {{page.title}}
@@ -62,7 +62,7 @@ and grouped at a specified period.
 
 ### Embedded collections
 
-* `aggregates` A collection of {{page.title}}s with properties as described under [Item properties][] and links as described under [Item links][]
+* `aggregates` A collection of {{page.title}}s with properties as described under [Item properties](#itemproperties) and links as described under [Item links](#itemlinks)
 
 ## Usage
 

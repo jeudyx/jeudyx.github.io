@@ -27,7 +27,7 @@ and describe the activity.
 
 None
 
-### Item properties
+### Item properties <a name="itemproperties"></a>
 
 | Name           | Description                                                                    | Type    | Units | HTTP Support |
 |----------------|--------------------------------------------------------------------------------|---------|-------|--------------|
@@ -66,7 +66,7 @@ Valid values are `snow skiing is`, `treadmill runs are`
 
 > Note: values will be returned for `user_action_past` and `user_action_present`, but `activites_are` may be null.
 
-### Item links
+### Item links <a name="itemlinks"></a>
 
 `parent` The direct parent of the {{page.title}}  
 `root` The root of the tree in which the {{page.title}} resides  

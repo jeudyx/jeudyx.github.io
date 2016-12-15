@@ -29,7 +29,7 @@ The `{{page.title}}` is a user's list of all current connections with 3rd-partie
 
 None
 
-### Item properties
+### Item properties <a name="itemproperties"></a>
 
 | Property           |           | type                                                         | description                                                                               |
 |--------------------|-----------|--------------------------------------------------------------|-------------------------------------------------------------------------------------------|
@@ -38,7 +38,7 @@ None
 | `created_datetime` | Read only | String: ISO8601 formatted with offset (YYYY-MM-DDThh:mm:ssZ) | The time at which the {{page.title}} was made and authorized.                          |
 | `last_sync_time`   | Read only | String: ISO8601 formatted with offset (YYYY-MM-DDThh:mm:ssZ) | The last time of a successful sync.                                                       |
 
-### Item links
+### Item links <a name="itemlinks"></a>
 
 `self` A link to this resource  
 `user` A link to the user that owns the {{page.title}}

@@ -26,7 +26,7 @@ This resource provides access to the Under Armour {{ page.title }} settings. {{ 
 
 `GET` Retrieve a {{ page.title }} option by `id`
 
-### Item properties
+### Item properties <a name="itemproperties"></a>
 
 | Name   | Description                          | Type   | Units | HTTP Support      |
 |--------|--------------------------------------|--------|-------|-------------------|

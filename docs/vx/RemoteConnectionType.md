@@ -44,7 +44,7 @@ None
 | `oauth_connect_link` | Used internally                               | `string` |       | **GET:** Required |
 | `logo_link`          | relative URL to logo image asset              | `string` |       | **GET:** Required |
 
-### Item links
+### Item links <a name="itemlinks"></a>
 
 `self` A link to this resource
 

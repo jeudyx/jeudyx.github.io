@@ -26,7 +26,7 @@ The [Actigraphy](/docs/{{page.versionhref}}_Actigraphy) resource only supports r
 
 ## Item
 
-### Item properties
+### Item properties <a name="itemproperties"></a>
 
 Name                 | Description                                                                                                                                                     | Type              | Units | HTTP Support
 ---                  | ---                                                                                                                                                             | ---               | ---   | ---
@@ -40,7 +40,7 @@ Name                 | Description                                              
 
 &dagger; Each member of the timezones list is a tuple containing an epoch timestamp and a timezone string (IANA Time Zone Database formatted). The timestamp is the time that the timezone change occurred. Timestamps can occur before `start_datetime_utc`. 
 
-### Item links
+### Item links <a name="itemlinks"></a>
 
 `workouts.self` A link to the Workout resource
 `workouts.activity_type` A link to an ActivityType resource for the workout
@@ -74,7 +74,7 @@ Name          | Description                                     | Type          
 
 ### Embedded collections
 
-`actigraphies` A collection of ${name}s with properties as described under [Item properties][] and links as described under [Item links][]
+`actigraphies` A collection of ${name}s with properties as described under [Item properties](#itemproperties) and links as described under [Item links](#itemlinks)
 
 ## Usage
 

@@ -30,9 +30,9 @@ Returns information about routes, which are user-defined or automatically genera
 
 | Name          | Description               | Type       | Required |
 |-------------- |---------------------------|------------|----------|
-| `field_set`   | Specifies the set of fields to be returned or saved. Valid values are ``default`` (the default if not specified) or ``detailed``. See more details under [Item properties][] | text | No   |
+| `field_set`   | Specifies the set of fields to be returned or saved. Valid values are ``default`` (the default if not specified) or ``detailed``. See more details under [Item properties](#itemproperties) | text | No   |
 
-### Item properties
+### Item properties <a name="itemproperties"></a>
 
 ##### `default` field_set
 
@@ -110,7 +110,7 @@ Returns information about routes, which are user-defined or automatically genera
     ]
 ```
 
-### Item links
+### Item links <a name="itemlinks"></a>
 
 `privacy` Optional. Link to the desired privacy level for the route.  
 `user` Optional. Link to the user resource of the route creator.  
@@ -180,7 +180,7 @@ The following query parameters only apply to GET
 
 ### Embedded collections
 
- `routes` A collection of route items with properties as described under [Item properties][] and links as described under [Item links][]
+ `routes` A collection of route items with properties as described under [Item properties](#itemproperties) and links as described under [Item links](#itemlinks)
 
 ## Usage
 

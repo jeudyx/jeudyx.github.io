@@ -28,7 +28,7 @@ This resource allows creation, modification, and deletion of {{page.title}} data
 
 `DELETE` Delete a Sleep by id.
 
-### Item properties
+### Item properties <a name="itemproperties"></a>
 
 | Name         | Description          | Type      | Units               | HTTP Support                                                                        |
 |--------------|----------------------|-----------|---------------------|-------------------------------------------------------------------------------------|
@@ -48,7 +48,7 @@ This resource allows creation, modification, and deletion of {{page.title}} data
 |`aggregates.details.times_awakened`| The total cumulative times awakened during the sleep.| Number (integer)| | **GET**: optional **POST**: optional **PUT**: optional|
 |`aggregates.details.time_to_sleep`| The total cumulative time to sleep during the sleep.| Number (float)| seconds| **GET**: optional **POST**: optional **PUT**: optional      |
 
-### Item links
+### Item links <a name="itemlinks"></a>
 
 `self` A link to this resource
 
@@ -86,7 +86,7 @@ This resource allows creation, modification, and deletion of {{page.title}} data
 
 ### Embedded collections
 
-`sleeps` A collection of Sleeps with properties as described under [Item properties][] and links as described under [Item links][].
+`sleeps` A collection of Sleeps with properties as described under [Item properties](#itemproperties) and links as described under [Item links](#itemlinks).
 
 ## Usage
 

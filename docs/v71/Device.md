@@ -32,7 +32,7 @@ A device is identified by the combination of manufacturer and model (lower case)
 
 None
 
-### Item properties
+### Item properties <a name="itemproperties"></a>
 
 | Name           | Description                                          | Type   | Units | HTTP Support                                              |
 |----------------|------------------------------------------------------|--------|-------|-----------------------------------------------------------|
@@ -50,7 +50,7 @@ None
  * **Valid manufacturers:** `"samsung"`, `"underarmour"`
  * **Invalid manufacturers:** `"under armour"`, `"under_armour"`
 
-### Item links
+### Item links <a name="itemlinks"></a>
 
  * `self` A link to this resource.
 
@@ -80,7 +80,7 @@ None
 
 ### Embedded collections
 
- * `devices` A collection of Devices with properties as described under [Item properties][] and links as described under [Item links][].
+ * `devices` A collection of Devices with properties as described under [Item properties](#itemproperties) and links as described under [Item links](#itemlinks).
 
 ## Usage
 

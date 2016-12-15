@@ -27,7 +27,7 @@ Image uploads are limited to files 4MB or less in size. Attempting to upload a l
 
 * `GET` Retrieve an {{page.title}} by id
 
-### Item properties
+### Item properties <a name="itemproperties"></a>
 
 | Name         | Description                                                                                                                                                           | Type      | Units  | HTTP Support      |
 |--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|--------|-------------------|

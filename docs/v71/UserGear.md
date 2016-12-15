@@ -27,7 +27,7 @@ This resource allows creation and modification of user gear.
 * `DELETE` Delete a {{page.title}}
 
 
-### Item Properties
+### Item properties <a name="itemproperties"></a>
 
 | Name                       | Description                                                                            | Type                                                  | Units   | HTTP Support      |
 | ---                        | ---                                                                                    | ---                                                   | ---     | ---               |
@@ -63,7 +63,7 @@ these data either on the gear (if it has the ability to do so) or on the client
 and then store those values in the API.
 
 
-### Item Links
+### Item links <a name="itemlinks"></a>
 
 * `self` A link to this resource
 * `user` A link to the User resource that owns the usergear
