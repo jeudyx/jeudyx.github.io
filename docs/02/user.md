@@ -8,7 +8,7 @@ tags: user
 title: User
 layout: documentation
 path_version: api/0.2
-docs_version: 02
+docs_version: '02'
 permalink: /docs/02_User/
 doc_uri: 02_User/
 ---

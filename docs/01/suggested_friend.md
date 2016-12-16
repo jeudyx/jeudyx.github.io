@@ -7,7 +7,7 @@ tags: social
 title: Suggested Friend
 layout: documentation
 path_version: api/0.1
-docs_version: 01
+docs_version: '01'
 permalink: /docs/01_Suggested_Friend/
 doc_uri: 01_Suggested_Friend/
 ---

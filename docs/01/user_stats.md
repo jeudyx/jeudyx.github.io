@@ -7,7 +7,7 @@ tags: user
 title: User Stats
 layout: documentation
 path_version: api/0.1
-docs_version: 01
+docs_version: '01'
 permalink: /docs/01_User_Stats/
 doc_uri: 01_User_Stats/
 ---

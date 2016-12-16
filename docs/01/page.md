@@ -7,7 +7,7 @@ tags: social
 title: Page
 layout: documentation
 path_version: api/0.1
-docs_version: 01
+docs_version: '01'
 permalink: /docs/01_Page/
 doc_uri: v01_Page/
 ---

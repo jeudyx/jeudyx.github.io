@@ -7,7 +7,7 @@ tags: user
 title: User Role
 layout: documentation
 path_version: api/0.2
-docs_version: 02
+docs_version: '02'
 permalink: /docs/02_User_Role/
 doc_uri: 02_User_Role/
 ---
