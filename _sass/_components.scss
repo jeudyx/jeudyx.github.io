@@ -8,7 +8,11 @@
   width: 200px;
 }
 
-.button-red {
-  background: #ea212e;
-  color: #fff;
+a.button-red {
+  &,
+  &:link,
+  &:visited {
+    color: #fff;
+    background: #ea212e;
+  }
 }

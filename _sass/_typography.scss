@@ -12,6 +12,10 @@ body {
   }
 }
 
+a {
+  text-decoration: none;
+}
+
 .content {
   h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     font-family: $urbano-condensed;
@@ -50,7 +54,9 @@ body {
     margin-bottom: 1em;
   }
 
-  a {
+  a,
+  a:link,
+  a:visited {
     color: #006fc6;
     text-decoration: none;
   }

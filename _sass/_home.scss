@@ -1,3 +1,20 @@
+.homepage {
+  background-color: #fff;
+
+  & > section {
+    padding-right: 1em;
+    padding-left: 1em;
+  }
+
+  p {
+    a:link,
+    a:visited {
+      color: #006fc6;
+      text-decoration: none;
+    }
+  }
+}
+
 .home-hero {
   @include flexbox;
   @include align-items(center);
@@ -166,5 +183,6 @@
   width: 300px;
   p {
     margin-top: 0;
+    margin-bottom: 1em;
   }
 }
