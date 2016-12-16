@@ -19,6 +19,7 @@ Returns information about {{ page.title }}s between Under Armour [`Users`](/docs
 ## Resource URIs
 
 **Item URI:** `/{{ page.path_version }}/friendship/<friendship_id>/`
+
 **Collection URI:** `/{{ page.path_version }}/friendship/`
 
 ## Item

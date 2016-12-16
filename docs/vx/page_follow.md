@@ -19,6 +19,7 @@ A {{ page.title }} represents a [User](/docs/{{ page.docs_version }}_User) follo
 ## Resource URIs
 
 **Item URI:** `/{{ page.path_version }}/page_follow/{pk}/`
+
 **Collection URI:** `/{{ page.path_version }}/page_follow/`
 
 ## Item

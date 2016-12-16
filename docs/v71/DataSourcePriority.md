@@ -4,7 +4,7 @@ title: Data Source Priority
 resource: Data Source
 version: v7.1
 versionhref: v71
-permalink: /docs/v71_DataSource_Priority/
+permalink: /docs/v71_Data_Source_Priority/
 ---
 
 # {{page.title}}
@@ -152,7 +152,7 @@ Valid values are `sleep`, `activity`
         ],
         "documentation": [
             {
-                "href": "https://www.mapmyapi.com/docs/v71_DataSource_Priority"
+                "href": "https://www.mapmyapi.com/docs/v71_Data_Source_Priority"
             }
         ]
     }
@@ -185,7 +185,7 @@ Result is sorted descending by effective date.
         ],
         "documentation": [
             {
-                "href": "https://www.mapmyapi.com/docs/v71_DataSource_Priority"
+                "href": "https://www.mapmyapi.com/docs/v71_Data_Source_Priority"
             }
         ]
     },
@@ -354,7 +354,7 @@ to the time the record is created.
         ],
         "documentation": [
             {
-                "href": "https://www.mapmyapi.com/docs/v71_DataSource_Priority"
+                "href": "https://www.mapmyapi.com/docs/v71_Data_Source_Priority"
             }
         ]
     }

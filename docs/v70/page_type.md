@@ -4,7 +4,7 @@ doc_uri: Page_Type
 versions: vx, api/0.1, v7.0, v7.1
 released: 2014-12-16
 tags: social
-title:
+title: Page Type
 layout: documentation
 path_version: v7.0
 docs_version: v70
@@ -19,6 +19,7 @@ Provides {{ page.title }}s which are applied to a [`Page`](/docs/{{ page.docs_ve
 ## Resource URIs
 
 **Item URI:** `/{{ page.path_version }}/page_type/{pk}/`
+
 **Collection URI:** `/{{ page.path_version }}/page_type/`
 
 ## Item

@@ -12,6 +12,7 @@
   width: 100%;
 
   @include large {
+    max-height: none;
     height: 560px;
   }
 
@@ -73,6 +74,8 @@
   line-height: 1.3em;
   margin-bottom: 1.25em;
   max-width: 790px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .home-hero-2, .home-hero-3 {
@@ -105,6 +108,8 @@
 
   > p {
     max-width: 625px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
 }
@@ -115,6 +120,7 @@
   @include align-items(center);
   @include justify-content(center);
   @include flex-wrap(wrap);
+  margin-top: 2em;
 }
 
 .home-tech-items {
@@ -155,6 +161,8 @@
 }
 
 .home-sdk-item {
+  line-height: 1;
+  margin-bottom: 2em;
   width: 300px;
   p {
     margin-top: 0;

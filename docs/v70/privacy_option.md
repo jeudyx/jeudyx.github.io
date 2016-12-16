@@ -18,6 +18,7 @@ This resource provides access to the Under Armour {{ page.title }} settings. {{ 
 ## Resource URIs
 
 **Item URI:** `/{{ page.path_version }}/privacy_option/<pk>/`
+
 **Collection URI:** `/{{ page.path_version }}/privacy_option/`
 
 ## Item

@@ -23,7 +23,9 @@ A public {{ page.title }} (see [Page Type](/docs/{{ page.docs_version }}_Page_Ty
 ## Resource URIs
 
 **Item URI:** `/{{ page.path_version }}/page/{pk}/`
+
 **Item URI:** `/{{ page.path_version }}/page/{alias}/`
+
 **Collection URI:** `/{{ page.path_version }}/page/`
 
 ## Item

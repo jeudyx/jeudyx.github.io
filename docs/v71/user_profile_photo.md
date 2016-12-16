@@ -19,6 +19,7 @@ This resource is used to update {{ page.title }}s. It also includes links to the
 ## Resource URIs
 
 **Item URI:** `/{{ page.path_version }}/user_profile_photo/<pk>/`
+
 **Collection URI:** `/{{ page.path_version }}/user_profile_photo/`
 
 ## Item
