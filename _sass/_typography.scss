@@ -67,13 +67,26 @@ a {
     margin-bottom: 1em;
   }
 
-  li {
-    list-style-type: disc;
-    list-style-position: outside;
+  ol {
+    padding-left: 2em;
+
+    li {
+      list-style: decimal;
+    }
+  }
+
+  ul li {
+    list-style: disc outside;
   }
 
   .text-center {
     text-align: center;
   }
 
+}
+
+.faq {
+  & > section {
+    margin-bottom: 2.5em;
+  }
 }

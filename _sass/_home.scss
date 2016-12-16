@@ -13,6 +13,11 @@
       text-decoration: none;
     }
   }
+
+  h2 {
+    line-height: 1.15;
+    margin-bottom: 0.5em;
+  }
 }
 
 .home-hero {
@@ -78,6 +83,7 @@
   line-height: 20px;
   padding-top: 51px;
   margin: 0;
+  margin-bottom: 0.75em;
 }
 
 .home-intro-title {
@@ -119,7 +125,6 @@
     color: #666;
     font-size: 62px;
     font-weight: bold;
-    line-height: 55px;
     text-transform: uppercase;
   }
 
