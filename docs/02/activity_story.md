@@ -1167,7 +1167,7 @@ Example of a GET of a post containing checkin data:
     "source": {
         "site_name": "Under Armour",
         "id": 32,
-        "site_url": "http://women.underarmour.com"
+        "site_url": "http://record.underarmour.com"
     },
     "verb": "post",
     "_links": {
@@ -1367,7 +1367,7 @@ Example of a GET of a post containing checkin data:
     "source": {
         "site_name": "Under Armour",
         "id": 32,
-        "site_url": "http://women.underarmour.com"
+        "site_url": "http://record.underarmour.com"
     },
     "verb": "post",
     "target": null,
