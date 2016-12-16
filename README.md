@@ -1,9 +1,27 @@
 # mapmy-api-docs
 
-1. clone repository
-2. cd into project directory
-3. run docker-compose build local
-4. developer workflow: docker-compose up local, open 0.0.0.0:4000 in a browser
+## Introduction
+
+This project contains the API documentation and other pages on developer.underarmour.com.
+
+It's a Jekyll-based codebase and follows Jekyll convention. See more about Jekyll [here](https://jekyllrb.com/docs/home/).
+
+The site is hosted on GitHub pages. See GitHub Pages settings [here](https://github.com/underarmour/mapmy-api-docs/settings).
+
+## Getting Started
+
+Clone repository and `cd` into the project directory
+```
+$ git clone git@github.com:underarmour/mapmy-api-docs.git
+$ cd mapmy-api-docs
+```
+
+Run the local dev server:
+```
+$ docker-compose up --build local
+```
+
+Open `localhost:4000` in a browser. Changes to project files are processed automatically and should be viewable with a page refresh.
 
 ## Manage Blog Posts
 
