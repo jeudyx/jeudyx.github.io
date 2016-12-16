@@ -8,8 +8,8 @@ version: v7.1
 # 24/7 Tracking: Reading Data
 
 After [using the 24/7 Tracking endpoints to store data](/docs/v71_24_7_tracking_tutorial),
-you can use either the [Actigraphy](/docs/{{ page.version }}_Actigraphy) or the
-[Aggregate](/docs/{{ page.version }}_Aggregate) resources to read the data out. To know when
+you can use either the [Actigraphy](/docs/v71_Actigraphy) or the
+[Aggregate](/docs/v71_Aggregate) resources to read the data out. To know when
 to use which resource, see [the Actigraphy vs. Aggregate overview](/docs/v71_actigraphy_vs_aggregate).
 
 
@@ -136,7 +136,7 @@ metric looks like:
 
 Notice that each data point in the time series is a tuple of an epoch time stamp
 and the number of steps taken in that chunk of time. See the full
-[Actigraphy documentation][/docs/{{ page.version }}_Actigraphy] for more details.
+[Actigraphy documentation][/docs/v71_Actigraphy] for more details.
 
 
 ## Getting Weekly Data from Aggregate
@@ -237,8 +237,8 @@ Status 200
 
 ## See Also
 
-* [Actigraphy][/docs/{{ page.version }}_Actigraphy]
-* [Aggregate][/docs/{{ page.version }}_Aggregate]
+* [Actigraphy][/docs/v71_Actigraphy]
+* [Aggregate][/docs/v71_Aggregate]
 * [Workout & 24/7 Tracking overview](/docs/v71_workouts_and_24_7_tracking)
 * [Actigraphy vs. Aggregate overview](/docs/v71_actigraphy_vs_aggregate)
 * [24/7 Tracking: Reading Data](/docs/v71_24_7_tracking_reading_tutorial)

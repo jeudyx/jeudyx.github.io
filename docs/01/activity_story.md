@@ -1583,6 +1583,7 @@ Example of a GET of a post containing checkin data:
 
 ###### Response: HTTP 204 No Content
 
+<a name="create-a-status-post-story" />
 ### Create a status post story
 
 ###### Request: `POST /{{ page.path_version }}/activity_story/`
@@ -1703,7 +1704,7 @@ POST request is otherwise the same:
 ###### Response
 
 The format follows the above
-[Create a status post story](#mmf-docs-create-a-status-post-story) example.
+[Create a status post story](#create-a-status-post-story) example.
 
 
 ### Create a status post story with a checkin
