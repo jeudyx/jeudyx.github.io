@@ -8,6 +8,10 @@
   }
 }
 
+.page-blog .container:not(:first-child) h2 {
+  margin-top: 3em;
+}
+
 .page-blog-date {
   color: #999;
   font-size: 16px;
