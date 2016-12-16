@@ -15,8 +15,12 @@
   }
 
   h2 {
-    line-height: 1.15;
+    line-height: 1;
     margin-bottom: 0.5em;
+
+    @include large {
+      line-height: 1.15;
+    }
   }
 }
 
