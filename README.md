@@ -23,4 +23,19 @@ See `docs`.
 
 See `docs-private`. Configuration to ignore this dir from the build is in `_config.yml`.
 
+## Styling
 
+Jekyll uses SCSS for styling. Our main file is `assets/css/main.scss'; any Sass files you want included in the project must be included here. Please note: you must include variables and mixins _before_ the file where they are used.
+
+## Layouts and includes
+
+All pages, blog posts, and documentation pages are rendered using a layout. Layouts live in `_layouts`.
+Most of the layouts include common html components which live in `_includes`.
+
+Use root relative urls when referring to assets.
+
+Example: assuming an image lives in the filesystem at `assets/images/logo.png`, you would reference like:
+
+```
+  <img src="/assets/images/uacf_logo.png" />
+```
