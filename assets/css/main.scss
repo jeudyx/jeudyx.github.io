@@ -6,24 +6,15 @@
 @import 'fonts';
 @import 'flex';
 @import 'mixins';
-
-/* additional resets */
-
-html {
-  box-sizing: border-box;
-}
-
-* {
-  box-sizing: inherit;
-}
-
 @import 'typography';
 @import 'layout';
 @import 'sidenav';
 @import 'components';
-@import 'documentation';
 @import 'header';
 @import 'footer';
+
+/* pages */
+@import 'documentation';
 @import 'blog';
 @import 'home';
 @import 'sdk';
