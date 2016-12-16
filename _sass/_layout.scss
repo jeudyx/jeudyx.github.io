@@ -34,7 +34,7 @@ body {
 
   .col-2 {
     @include flex(1);
-    overflow: hidden;
+    overflow: auto;
     margin: 0 20px;
   }
 

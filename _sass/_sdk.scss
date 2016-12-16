@@ -1,10 +1,10 @@
 .page-sdk-box {
   background-color: #e1e1e1;
-  float: right;
-  margin: 0 0 2em 2em;
   padding: 1em;
   text-align: center;
-  width: 280px;
+  max-width: 280px;
+  margin: 0 auto 2em;
+
   em {
     font-style: italic;
   }
@@ -16,5 +16,10 @@
   a {
     margin-top: .5em;
     width: 100%;
+  }
+
+  @include large {
+    float: right;
+    margin: 0 0 2em 2em;
   }
 }
