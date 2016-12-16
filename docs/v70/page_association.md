@@ -8,7 +8,7 @@ title: Page Association
 layout: documentation
 path_version: v7.0
 docs_version: v70
-permalink: /docs/v70_Page_Association
+permalink: /docs/v70_Page_Association/
 doc_uri: v70_Page_Association/
 ---
 

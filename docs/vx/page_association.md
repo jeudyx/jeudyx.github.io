@@ -8,7 +8,7 @@ title: Page Association
 layout: documentation
 path_version: vx
 docs_version: vx
-permalink: /docs/vx_Page_Association
+permalink: /docs/vx_Page_Association/
 doc_uri: vx_Page_Association/
 ---
 
