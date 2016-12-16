@@ -400,7 +400,7 @@ Additional properties:
 | Name       | Description                                                                                     | Type   |
 | ---        | ---                                                                                             | ---    |
 | `text`     | The status update text (optional)                                                               | string |
-| `privacy`  | Integer corresponding to the privacy setting of this object - see [Privacy](/docs/{{ page.docs_version }}_Privacy) | int    |
+| `privacy`  | Integer corresponding to the privacy setting of this object - see [Privacy](/docs/{{ page.docs_version }}_Privacy_Option) | int    |
 | `mentions` | Mentions contained in the status text                                                           | list   |
 
 
@@ -419,7 +419,7 @@ Additional properties:
 | ---        | ---                                                                                             | ---     |
 | `text`     | The repost story text (optional)                                                                | string  |
 | `story`    | The full original story - contains all story properties except likes and comments.              | {{ page.title }} |
-| `privacy`  | Integer corresponding to the privacy setting of this object - see [Privacy](/docs/{{ page.docs_version }}_Privacy) | int     |
+| `privacy`  | Integer corresponding to the privacy setting of this object - see [Privacy](/docs/{{ page.docs_version }}_Privacy_Option) | int     |
 | `mentions` | Mentions contained in the repost text                                                           | list    |
 
 

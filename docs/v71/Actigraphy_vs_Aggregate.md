@@ -9,7 +9,7 @@ docs_version: v71
 
 The Under Armour Connected Fitness platform provides two ways to get activity
 data over time: [Actigraphy](/docs/{{ page.docs_version }}_Actigraphy) and
-[Aggregate](/docs/{{ page.docs_version }}/Aggregate).
+[Aggregate](/docs/{{ page.docs_version }}_Aggregate).
 
 
 ## Actigraphy

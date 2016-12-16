@@ -17,7 +17,7 @@ doc_uri: v70_Page/
 A {{ page.title }} is a representation of an entity (user, brand, athlete etc.) that allows entities to share stories and to
 connect with an audience.
 
-A public {{ page.title }} (see [Page Type](/docs/{{ page.path_version }}_Page_Type)) can be followed by [User](/docs/{{ page.docs_version }}_User) and a {{ page.title }} can be
+A public {{ page.title }} (see [Page Type](/docs/{{ page.docs_version }}_Page_Type)) can be followed by [User](/docs/{{ page.docs_version }}_User) and a {{ page.title }} can be
 [Page Association](/docs/{{ page.docs_version }}_Page_Association) with other {{ page.title }}s to automatically aggregate social content.
 
 ## Resource URIs

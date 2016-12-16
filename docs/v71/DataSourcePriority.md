@@ -4,7 +4,7 @@ title: Data Source Priority
 resource: Data Source
 version: v7.1
 versionhref: v71
-permalink: /docs/v71_Data_Source_Priority/
+permalink: /docs/v71_DataSource_Priority/
 ---
 
 # {{page.title}}
@@ -49,7 +49,7 @@ Valid values are `sleep`, `activity`
 ### Item links <a name="itemlinks"></a>
 
 * `self` A link to this resource
-* `data_source` A link to the related [Data Source](/docs/{{page.versionhref}}_Data_Source)
+* `data_source` A link to the related [Data Source](/docs/{{page.versionhref}}_DataSource)
 * `device` [Device](/docs/{{page.versionhref}}_Device) associated with the Data Source
 * `remote_connection` *optional* if Data Source is associated with a
   [Remote Connection](/docs/{{page.versionhref}}_Remote_Connection)
@@ -108,7 +108,7 @@ Valid values are `sleep`, `activity`
 * `self` A link to this resource
 * `data_source` A link to the related [Data Source](/docs/{{page.versionhref}}_DataSource)
 * `device` [Device](/docs/{{page.versionhref}}_Device) associated with the
-  [Data Source](/docs/{{page.versionhref}}_Data_Source)
+  [Data Source](/docs/{{page.versionhref}}_DataSource)
 * `remote_connection` *optional.* if [Data Source](/docs/{{page.versionhref}}_DataSource) is
   associated with a [Remote Connection](/docs/{{page.versionhref}}_Remote_Connection)
 
@@ -152,7 +152,7 @@ Valid values are `sleep`, `activity`
         ],
         "documentation": [
             {
-                "href": "https://www.mapmyapi.com/docs/v71_Data_Source_Priority"
+                "href": "https://www.mapmyapi.com/docs/v71_DataSource_Priority"
             }
         ]
     }
@@ -185,7 +185,7 @@ Result is sorted descending by effective date.
         ],
         "documentation": [
             {
-                "href": "https://www.mapmyapi.com/docs/v71_Data_Source_Priority"
+                "href": "https://www.mapmyapi.com/docs/v71_DataSource_Priority"
             }
         ]
     },
@@ -354,7 +354,7 @@ to the time the record is created.
         ],
         "documentation": [
             {
-                "href": "https://www.mapmyapi.com/docs/v71_Data_Source_Priority"
+                "href": "https://www.mapmyapi.com/docs/v71_DataSource_Priority"
             }
         ]
     }
