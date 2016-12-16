@@ -18,7 +18,7 @@ Some use cases include:
 
 ## <a name="tech_desc"></a> Technical Description
 
-For this grant type the `POST` request to the **access token endpoint** (https://api.ua.com/{{ page.version }}/oauth2/access_token/)
+For this grant type the `POST` request to the **access token endpoint** ([https://api.ua.com/{{ page.version }}/oauth2/access_token/]())
 should have the following parameters:
 
 | Param           | Value
