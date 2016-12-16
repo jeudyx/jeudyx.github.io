@@ -38,7 +38,7 @@ Name                 | Description                                              
 `metrics`            | Time series and finer-grained aggregates for each metric type that occur within the `start_datetime_utc` and `end_datetime_utc` bounds of the Actigraphy.                    | dict              |       | **GET:** Required
 `workouts`           | Workouts that occured within the `start_datetime_utc` and `end_datetime_utc` bounds of the Actigraphy.                                                          | Array             |       | **GET:** Required
 
-&dagger; Each member of the timezones list is a tuple containing an epoch timestamp and a timezone string (IANA Time Zone Database formatted). The timestamp is the time that the timezone change occurred. Timestamps can occur before `start_datetime_utc`. 
+&dagger; Each member of the timezones list is a tuple containing an epoch timestamp and a timezone string (IANA Time Zone Database formatted). The timestamp is the time that the timezone change occurred. Timestamps can occur before `start_datetime_utc`.
 
 ### Item links <a name="itemlinks"></a>
 
@@ -70,11 +70,11 @@ Name          | Description                                     | Type          
 ### Collection links
 
 `self` A link to this resource
-`user` A link to the User resource that owns the ${name}
+`user` A link to the User resource that owns the {{ page.title }}
 
 ### Embedded collections
 
-`actigraphies` A collection of ${name}s with properties as described under [Item properties](#itemproperties) and links as described under [Item links](#itemlinks)
+`actigraphies` A collection of {{ page.title }}s with properties as described under [Item properties](#itemproperties) and links as described under [Item links](#itemlinks)
 
 ## Usage
 
@@ -84,7 +84,7 @@ To fetch a single actigraphy for a date, issue a GET request to the [Actigraphy]
 
 ###### Request `GET /{{page.version}}/actigraphy/?start_date=2014-05-01&end_date=2014-05-01`.
 
-### GET ${name} collection
+### GET {{ page.title }} collection
 
 ###### Request `GET /{{page.version}}/actigraphy/?start_date=2014-04-16&end_date=2014-04-17`.
 
