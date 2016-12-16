@@ -27,7 +27,7 @@ BREAKING CHANGES:
 NEW FEATURES:
 
 - Route Resource
-    - Added rpc uri /v7.1/Route/<id>/set_privacy/ to set the privacy on a route
+    - Added rpc uri `/v7.1/Route/<id>/set_privacy/` to set the privacy on a route
     
     ```
     POST /v7.1/Route/<id>/set_privacy/

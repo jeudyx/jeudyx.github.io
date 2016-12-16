@@ -16,14 +16,14 @@ the 24/7 Tracking resources.
 
 The most common usage will be that your application is collecting data over time
 from a device. For this, you'll want the
-[All Day Activity Time Series](/docs/{{ page.version }}_All_Day_Activity Time Series]
+[All Day Activity Time Series](/docs/{{ page.version }}_All_Day_Activity Time Series)
 endpoint.  This endpoint allows you to write multiple days worth of step,
 distance and energy expenditure data in a single request. The data is then
 automatically processed into All Day Activity records, bucketed by date. Because
 of this, you cannot retrieve the original data once you've sent it.
 
 If you don't have the granular time series data, you can write aggregate data
-directly to the [All Day Activity](/docs/{{ page.version }}_All_Day_Activity] endpoint to
+directly to the [All Day Activity](/docs/{{ page.version }}_All_Day_Activity) endpoint to
 store it. If you use this technique, you should bucket the data by date so that
 any given aggregate doesn't span more than a single day.
 
@@ -31,26 +31,26 @@ any given aggregate doesn't span more than a single day.
 ## Reading Data
 
 Data written in this way can be read from a number of endpoints, but mainly
-All Day Activity, [Actigraphy](/docs/{{ page.version }}_Actigraphy] and
-[Aggregate](/docs/{{ page.version }}_Aggregate]. See the appropriate documentation for more
+All Day Activity, [Actigraphy](/docs/{{ page.version }}_Actigraphy) and
+[Aggregate](/docs/{{ page.version }}_Aggregate). See the appropriate documentation for more
 detail on each of those.
 
 
 ## Data Sources
 
 In order to know what device recorded the data, you will need to set up a
-[Data Source](/docs/{{ page.version }}_Data_Source] for the user. A Data Source associates a
-[Device](/docs/{{ page.version }}_Device] to a [User](/docs/{{ page.version }}_User].
+[Data Source](/docs/{{ page.version }}_Data_Source) for the user. A Data Source associates a
+[Device](/docs/{{ page.version }}_Device) to a [User](/docs/{{ page.version }}_User).
 
 Once the UACF Platform understands that a user uses a device, it is used as the
 source for All Day Activity, All Day Activity Time Series,
-[Sleep](/docs/{{ page.version }}_Sleep], and [Body Mass](/docs/{{ page.version }}_Body_Mass] data.
+[Sleep](/docs/{{ page.version }}_Sleep), and [Body Mass](/docs/{{ page.version }}_Body_Mass) data.
 
 
 ## Data Source Priorities
 
 If a user has more than one Data Source,
-[Data Source Priorities](/docs/{{ page.version }}_Data Source Priority] are used to determine
+[Data Source Priorities](/docs/{{ page.version }}_Data Source Priority) are used to determine
 which Data Source will be used. The latest effective Data Source Priority on any
 date will be used. Which is to say, if a user has Device A, which is great for
 tracking sleep and Device B which they'd rather use to track steps, you can use
@@ -495,14 +495,14 @@ Status 200
 
 ## See Also
 
-* [Actigraphy](/docs/{{ page.version }}_Actigraphy]
-* [Aggregate](/docs/{{ page.version }}_Aggregate]
-* [Body Mass](/docs/{{ page.version }}_Body_Mass]
-* [Data Source](/docs/{{ page.version }}_Data_Source]
-* [Data Source Priorities](/docs/{{ page.version }}_Data_Source_Priority]
-* [Device](/docs/{{ page.version }}_Device]
-* [Sleep](/docs/{{ page.version }}_Sleep]
-* [User](/docs/{{ page.version }}_User]
+* [Actigraphy](/docs/{{ page.version }}_Actigraphy)
+* [Aggregate](/docs/{{ page.version }}_Aggregate)
+* [Body Mass](/docs/{{ page.version }}_Body_Mass)
+* [Data Source](/docs/{{ page.version }}_Data_Source)
+* [Data Source Priorities](/docs/{{ page.version }}_Data_Source_Priority)
+* [Device](/docs/{{ page.version }}_Device)
+* [Sleep](/docs/{{ page.version }}_Sleep)
+* [User](/docs/{{ page.version }}_User)
 * [Workout & 24/7 Tracking overview](/docs/v71_workouts_and_24_7_tracking)
 * [Actigraphy vs. Aggregate overview](/docs/v71_actigraphy_vs_aggregate)
 * [24/7 Tracking: Reading Data](/docs/v71_24_7_tracking_reading_tutorial)

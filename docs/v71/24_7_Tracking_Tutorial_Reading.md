@@ -136,7 +136,7 @@ metric looks like:
 
 Notice that each data point in the time series is a tuple of an epoch time stamp
 and the number of steps taken in that chunk of time. See the full
-[Actigraphy documentation][/docs/v71_Actigraphy] for more details.
+[Actigraphy documentation](/docs/v71_Actigraphy) for more details.
 
 
 ## Getting Weekly Data from Aggregate
@@ -237,8 +237,8 @@ Status 200
 
 ## See Also
 
-* [Actigraphy][/docs/v71_Actigraphy]
-* [Aggregate][/docs/v71_Aggregate]
+* [Actigraphy](/docs/v71_Actigraphy)
+* [Aggregate](/docs/v71_Aggregate)
 * [Workout & 24/7 Tracking overview](/docs/v71_workouts_and_24_7_tracking)
 * [Actigraphy vs. Aggregate overview](/docs/v71_actigraphy_vs_aggregate)
 * [24/7 Tracking: Reading Data](/docs/v71_24_7_tracking_reading_tutorial)
