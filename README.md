@@ -23,6 +23,9 @@ $ docker-compose up --build local
 
 Open `localhost:4000` in a browser. Changes to project files are processed automatically and should be viewable with a page refresh.
 
+## Deployments
+Changes to the remote master will trigger a deploy. Simply create a Pull Request, and once it's merged changes should be reflected in a moment's time.
+
 ## Manage Blog Posts
 
 See Jekyll's [blog docs](https://jekyllrb.com/docs/posts/). Each post has it's own document in `_posts`. Filename convention is YYYY-MM-DD-<title>.md.
