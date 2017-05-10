@@ -146,7 +146,7 @@ Downloading/unpacking ipython
     Successfully installed ipython
     Cleaning up...
 ```
-    
+
 ```bash
     pip install requests requests-oauthlib
 ```
@@ -293,9 +293,8 @@ Parse the Authorization Code from the request query string, and verify you have 
 ### Step 7: Client Application: Exchange the Authorization Code for an Access Token
 
 To get an Access Token, call the Under Armour access token endpoint with the
-Authorization Code and your application's client ID and secret. Our API partner,
-Mashery, requires an `Api-Key` header with your client ID, so we'll include
-that.
+Authorization Code and your application's client ID and secret. Our API requires an `Api-Key` header with your
+client ID, so we'll include that.
 
 > **Note:** Unlike most of our API, requests to the **access token endpoint** are required
 > by the specifications to have a content type of `application/x-www-form-urlencoded`
@@ -320,7 +319,7 @@ Verify you have an Access Token.
 
 
 ```
- 
+
 ```
 
 ### Step 8: Client Application: Request a resource on behalf of the user with his Access Token
