@@ -8,7 +8,7 @@ Since it was founded 18 years ago, Under Armour has existed on the belief that w
 
 Now together as one team, Under Armour Connected Fitness, our mission is to make all athletes better with the technology to train, perform, and achieve greatness. Our approach has never waivered – we’re committed to providing an open platform, now named the Under Armour Connected Fitness Platform. This platform provides all of the same technology to build meaningful and state-of-the-art experiences for athletes at all levels. With more than 30 million and growing rapidly, our platform is ready to help you ignite a fitness revolution.
 
-The Under Armour Connected Fitness Platform is built upon the same proven foundation of MapMyFitness. The MapMyFitness API & Mobile SDK have been used and trusted by hundreds of partners and developers throughout the years.
+The Under Armour Connected Fitness Platform is built upon the same proven foundation of MapMyFitness. The MapMyFitness API has been used and trusted by hundreds of partners and developers throughout the years.
 
 Our platform supports a full suite of APIs that help you track, inspire, and engage your user base. From 24/7 activity tracking to workout recording to supporting hundreds of devices, our inherently social platform helps you build applications that deliver both performance and fun. Individuals and companies of all sizes have built apps and ecosystems encompassing the data our users have come to love and rely upon as they continue their fitness journey. The platform also powers our entire suite of apps in MapMyRun, MapMyRide, MapMyHike, MapMyWalk, and Under Armour Record.
 
