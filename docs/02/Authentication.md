@@ -18,7 +18,7 @@ Under Armour cannot enforce the security of your application, and we reserve the
 
 ## Adding Under Armour branding to your application
 
-If you're having users connect your application with their Under Armour accounts, you are [required](/pricing) to use the following images for the log in button:
+If you're having users connect your application with their Under Armour accounts, you are required to use the following images for the log in button:
 
 ![xlarge logo](//developer-ua.mapmyfitness.com.s3.amazonaws.com/assets/login_buttons/UA-login_btn-xlarge.png)
 ![large logo](//developer-ua.mapmyfitness.com.s3.amazonaws.com/assets/login_buttons/UA-login_btn-large.png)
