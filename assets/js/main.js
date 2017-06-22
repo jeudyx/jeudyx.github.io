@@ -19,7 +19,7 @@ function initActiveClass () {
   const path = window.location.pathname
   if (path.match(/^\/docs/)) { siteNav.classList.add('docs') }
   if (path.match(/^\/blog/)) { siteNav.classList.add('blog') }
-  if (path.match(/^\/pricing/)) { siteNav.classList.add('pricing') }
+  if (path.match(/^\/signup/)) { siteNav.classList.add('signup') }
 }
 
 document.addEventListener('DOMContentLoaded', function () {
