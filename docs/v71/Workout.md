@@ -101,6 +101,7 @@ deliberate physical activity, as opposed to accumulating steps by passively walk
 | `started_after`       | Return {{page.title}}s started after the specified UTC datetime                                                                                                                     | Datetime, ISO8601 formatted YYYY-MM-DDThh:mm:ssZ. | No       |
 | `order_by`            | Order {{page.title}}s by specified field. Possible values are ['start_datetime', '-start_datetime']. Multiple comma-separated values of this parameter are allowed (one per field). | String                                            | No       |
 | `workout_attribution` | Filter {{page.title}}s by `workout_attribution`. Accepts one or more comma-separated attributions, which are OR'd together.                                                         | String                                            | No       |
+| `user_gear`         | Return {{page.title}}s associated with the referenced `UserGear` object. | `UserGear` href | No |
 
 
 ### Collection properties
@@ -180,7 +181,7 @@ deliberate physical activity, as opposed to accumulating steps by passively walk
 
 ###### Response
 
-``` 
+```
 204 No Response
 ```
 
@@ -269,13 +270,13 @@ deliberate physical activity, as opposed to accumulating steps by passively walk
         {
             "type": "user",
             "id": "/{{page.version}}/user/42976235/",
-            "start_index": 20, 
+            "start_index": 20,
             "end_index": 27
         },
         {
             "type": "page",
             "id": "/{{page.version}}/page/54362782/",
-            "start_index": 30, 
+            "start_index": 30,
             "end_index": 42
         }
     ],
@@ -324,7 +325,7 @@ deliberate physical activity, as opposed to accumulating steps by passively walk
 }
 ```
 
-###### Response 
+###### Response
 
 ```json
 {
