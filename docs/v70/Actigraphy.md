@@ -9,12 +9,12 @@ permalink: /docs/v70_Actigraphy/
 
 # {{ page.resource }}
 
-The [Actigraphy](/docs/{{page.versionhref}}_Actigraphy) resource represents a summary of all [Activity](/docs/{{page.versionhref}}_Activity), [Sleep](/docs/{{page.versionhref}}_Sleep), [Body Mass](/docs/{{page.versionhref}}_BodyMass), [Workout](/docs/{{page.versionhref}}_Workout), and Heart Rate data for a user's day, but
+The [Actigraphy](/docs/{{page.versionhref}}_Actigraphy) resource represents a summary of all Activity, [Sleep](/docs/{{page.versionhref}}_Sleep), [Body Mass](/docs/{{page.versionhref}}_BodyMass), [Workout](/docs/{{page.versionhref}}_Workout), and Heart Rate data for a user's day, but
 it is not necessarily confined to a 24-hour period. All sleep sessions with end datetimes that fall between an actigraphy-day's
 midnight-to-midnight boundary will be included in that day's actigraphy. The most recent values for the user's body weight, BMI, fat percent, and resting heart rate are reported.
 
-The [Actigraphy](/docs/{{page.versionhref}}_Actigraphy) resource will de-duplicate overlapping [Workout](/docs/{{page.versionhref}}_Workout) data and [Activity](/docs/{{page.versionhref}}_Activity) data where applicable. For example, if a
-user records a [Workout](/docs/{{page.versionhref}}_Workout) with a GPS-tracking app on their phone while also wearing a pedometer that records [Activity](/docs/{{page.versionhref}}_Activity) data, the
+The [Actigraphy](/docs/{{page.versionhref}}_Actigraphy) resource will de-duplicate overlapping [Workout](/docs/{{page.versionhref}}_Workout) data and Activity data where applicable. For example, if a
+user records a [Workout](/docs/{{page.versionhref}}_Workout) with a GPS-tracking app on their phone while also wearing a pedometer that records Activity data, the
 [Actigraphy](/docs/{{page.versionhref}}_Actigraphy) resource will return appropriate aggregate values (i.e. total distance, total steps, etc) during that time frame.
 This allows a user to get an accurate picture of their day without having to remove their wearable devices.
 

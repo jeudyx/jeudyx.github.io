@@ -18,7 +18,7 @@ A {{ page.title }} represents a collection of permissions. This resource is prov
 the permissions that are associated with a {{ page.title }}.
 
 **IMPORTANT:** All authorization checks should be made by checking the user's permission
-via the [User Permission](/docs/{{ page.docs_version }}_User_Permission) resource.
+via the User Permission resource.
 
 ## Resource URIs
 

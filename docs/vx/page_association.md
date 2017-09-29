@@ -18,7 +18,7 @@ A {{ page.title }} represents an association between two public pages (see [Page
 The direction of the {{ page.title }} has meaning and indicates that the `from_page` has associated itself with the
 `to_page`, allowing social posts from the `to_page` to appear on the `from_page`.
 
-To create an association between pages, the [User](/docs/{{ page.docs_version }}_User) creating the association must have `edit_resource`
+To create an association between pages, the User creating the association must have `edit_resource`
 permission on {{ page.title }}s.
 
 ## Resource URIs
@@ -334,6 +334,5 @@ Returns a single result if there is an association of this direction between two
 [api/0.1 Page]: docs/01_Page
 
 <!-- User -->
-[vx User]: docs/vx_User
 [v7.0 User]: docs/v70_User
 [api/0.1 User]: docs/01_User

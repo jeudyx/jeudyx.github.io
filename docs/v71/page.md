@@ -570,7 +570,6 @@ This example only shows the JSON-encoded object that should be provided as the "
 <!-- Image -->
 [vx Image]: docs/vx_Image
 [v7.0 Image]: docs/v70_Image
-[api/0.1 Image]: docs/01_Image
 
 <!-- User -->
 [vx User]: docs/vx_User

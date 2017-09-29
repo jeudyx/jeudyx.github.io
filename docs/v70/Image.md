@@ -78,7 +78,6 @@ The following is expected in the "files" part of the Image request
 | [`Event`](/docs/{{page.versionhref}}_Event)                     | /{{page.version}}/event/{id}           |
 | [`Page`](/docs/{{page.versionhref}}_Page]                       | /{{page.version}}/page/{id}            |
 | [`Rating Badge`](/docs/{{page.versionhref}}_Rating_Badge)       | /{{page.version}}/rating_badge/{id}    |
-| [`Rating Campaign`](/docs/{{page.versionhref}}_Rating_Campaign) | /{{page.version}}/rating_campaign/{id} |
 | [`Route`](/docs/{{page.versionhref}}_Route)                     | /{{page.version}}/route/{id}           |
 | [`Workout`](/docs/{{page.versionhref}}_Workout)                 | /{{page.version}}/workout/{id}         |
 
@@ -90,8 +89,6 @@ The following is expected in the "files" part of the Image request
 | `logo_photo`              | [`Event`](/docs/{{page.versionhref}}_Event)                     | For updating the logo of an Event.                         |
 | `cover_photo`             | [`Page`](/docs/{{page.versionhref}}_Page)                       | For updating the cover photo of a Page.                    |
 | `mobile_image_url`        | [`Rating Badge`](/docs/{{page.versionhref}}_Rating_Badge)       | For updating the mobile image of a Rating Badge.           |
-| `mobile_sponsor_logo_url` | [`Rating Campaign`](/docs/{{page.versionhref}}_Rating_Campaign) | For updating the mobile sponsor logo of a Rating Campaign. |
-| `web_sprite_url`          | [`Rating Campaign`](/docs/{{page.versionhref}}_Rating_Campaign) | For updating the web sprite of a Rating Campaign.          |
 | `attachments`             | [`Route`](/docs/{{page.versionhref}}_Route)                     | For attaching an image to a Route.                         |
 | `attachments`             | [`Workout`](/docs/{{page.versionhref}}_Workout)                 | For attaching an image to a Workout.                       |
  

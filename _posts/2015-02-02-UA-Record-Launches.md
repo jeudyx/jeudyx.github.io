@@ -13,11 +13,6 @@ A new feature, Personal Challenges, has also been integrated into the UA Record 
 Even more exciting are the features we added to our platform to build UA Record that we’re now opening up to all developers. You can find many new and updated API endpoints powering features found in UA Record, including:
 
 - [Activity Story]({{ site.github.url }}/docs/v70_Activity_Story)
-- [Group]({{ site.github.url }}/docs/v70_Group)
-- [Group Invite]({{ site.github.url }}/docs/v70_Group_Invite)
-- [Group Leaderboard]({{ site.github.url }}/docs/v70_Group_Leaderboard)
-- [Group Purpose]({{ site.github.url }}/docs/v70_Group_Purpose)
-- [Group User]({{ site.github.url }}/docs/v70_Group_User)
 - [Moderation Action]({{ site.github.url }}/docs/v70_Moderation_Action)
 - [Moderation Action Type]({{ site.github.url }}/docs/v70_Moderation_Action_Type)
 - [Moderation Status]({{ site.github.url }}/docs/v70_Moderation_Status)

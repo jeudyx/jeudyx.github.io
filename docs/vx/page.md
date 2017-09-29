@@ -17,7 +17,7 @@ doc_uri: vx_Page/
 A {{ page.title }} is a representation of an entity (user, brand, athlete etc.) that allows entities to share stories and to
 connect with an audience.
 
-A public {{ page.title }} (see [Page Type](/docs/{{ page.path_version }}_Page_Type)) can be followed by [User](/docs/{{ page.docs_version }}_User) and a {{ page.title }} can be
+A public {{ page.title }} (see [Page Type](/docs/{{ page.path_version }}_Page_Type)) can be followed by User and a {{ page.title }} can be
 [Page Association](/docs/{{ page.docs_version }}_Page_Association) with other {{ page.title }}s to automatically aggregate social content.
 
 ## Resource URIs
@@ -63,7 +63,7 @@ A public {{ page.title }} (see [Page Type](/docs/{{ page.path_version }}_Page_Ty
 }
 ```
 
-`profile_photo` Example `profile_photo` (see [Image](/docs/{{ page.docs_version }}_Image) for more information). The `profile_photo` can be updated via [Image](/docs/{{ page.docs_version }}_Image)
+The `profile_photo` can be updated via Image.
 
 ```json
 {
@@ -85,7 +85,7 @@ A public {{ page.title }} (see [Page Type](/docs/{{ page.path_version }}_Page_Ty
 }
 ```
 
-`cover_photo` Example response `cover_photo` (see [Image](/docs/{{ page.docs_version }}_Image) for more information). The `cover_photo` can be updated via [Image](/docs/{{ page.docs_version }}_Image)
+The `cover_photo` can be updated via Image.
 
 ```json
 {
@@ -531,8 +531,6 @@ Send a complete page representation as expected for POST
 
 ###### Request `POST: /image/`
 
-See [Image](/docs/{{ page.docs_version }}_Image) for details on the format required for posting an image.
-
 This example just shows the data JSON that needs to be provided to upload a profile_photo.
 
 ```json
@@ -545,8 +543,6 @@ This example just shows the data JSON that needs to be provided to upload a prof
 ### Post update of {{ page.title }} cover_photo
 
 ###### Request `POST: /image/`
-
-See [Image](/docs/{{ page.docs_version }}_Image) for details on the format required for posting an image.
 
 This example only shows the JSON-encoded object that should be provided as the "data" file in the multipart POST.
 
@@ -568,12 +564,9 @@ This example only shows the JSON-encoded object that should be provided as the "
 [api/0.1 Page Association]: docs/01_Page_Association
 
 <!-- Image -->
-[vx Image]: docs/vx_Image
 [v7.0 Image]: docs/v70_Image
-[api/0.1 Image]: docs/01_Image
 
 <!-- User -->
-[vx User]: docs/vx_User
 [v7.0 User]: docs/v70_User
 [api/0.1 User]: docs/01_User
 
