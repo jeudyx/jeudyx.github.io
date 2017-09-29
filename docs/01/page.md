@@ -63,7 +63,7 @@ A public {{ page.title }} (see [Page Type](/docs/{{ page.path_version }}_Page_Ty
 }
 ```
 
-`profile_photo` Example `profile_photo` (see [Image](/docs/{{ page.docs_version }}_Image) for more information). The `profile_photo` can be updated via [Image](/docs/{{ page.docs_version }}_Image)
+The `profile_photo` can be updated via Image.
 
 ```json
 {
@@ -85,7 +85,7 @@ A public {{ page.title }} (see [Page Type](/docs/{{ page.path_version }}_Page_Ty
 }
 ```
 
-`cover_photo` Example response `cover_photo` (see [Image](/docs/{{ page.docs_version }}_Image) for more information). The `cover_photo` can be updated via [Image](/docs/{{ page.docs_version }}_Image)
+The `cover_photo` can be updated via Image.
 
 ```json
 {
@@ -531,8 +531,6 @@ Send a complete page representation as expected for POST
 
 ###### Request `POST: /image/`
 
-See [Image](/docs/{{ page.docs_version }}_Image) for details on the format required for posting an image.
-
 This example just shows the data JSON that needs to be provided to upload a profile_photo.
 
 ```json
@@ -545,8 +543,6 @@ This example just shows the data JSON that needs to be provided to upload a prof
 ### Post update of {{ page.title }} cover_photo
 
 ###### Request `POST: /image/`
-
-See [Image](/docs/{{ page.docs_version }}_Image) for details on the format required for posting an image.
 
 This example only shows the JSON-encoded object that should be provided as the "data" file in the multipart POST.
 
@@ -570,7 +566,6 @@ This example only shows the JSON-encoded object that should be provided as the "
 <!-- Image -->
 [vx Image]: docs/vx_Image
 [v7.0 Image]: docs/v70_Image
-[api/0.1 Image]: docs/01_Image
 
 <!-- User -->
 [vx User]: docs/vx_User

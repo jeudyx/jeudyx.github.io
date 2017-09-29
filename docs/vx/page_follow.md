@@ -14,7 +14,7 @@ doc_uri: vx_Page_Follow/
 
 # {{ page.title }}
 
-A {{ page.title }} represents a [User](/docs/{{ page.docs_version }}_User) following a [Page](/docs/{{ page.docs_version}}_Page).  Following a page allows a user to see public activity feed posts from that page in their activity feed.
+A {{ page.title }} represents a User following a [Page](/docs/{{ page.docs_version}}_Page).  Following a page allows a user to see public activity feed posts from that page in their activity feed.
 
 ## Resource URIs
 
@@ -367,6 +367,5 @@ Returns a single result if the user is following the page, otherwise returns an 
 [api/0.1 Page]: docs/01_Page
 
 <!-- User -->
-[vx User]: docs/vx_User
 [v7.0 User]: docs/v70_User
 [api/0.1 User]: docs/01_User

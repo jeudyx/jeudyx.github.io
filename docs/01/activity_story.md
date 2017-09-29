@@ -944,8 +944,7 @@ An attachment object entity currently has the following properties:
 | `published` | Attachment publish date. Reflects the time of story publish, not attachment completion.                                                                                                                   | datetime |
 | `status`    | Indicates the status of the attached media - will be either `pending`, `processing` (images only), or `ready`. A `ready` status indicates the attachment is done with all processing and can be accessed. | string   |
 
-Image attachment objects have the following additional properties (see
-[Image](/docs/01_Image) for more information about *image* object properties):
+Image attachment objects have the following additional properties:
 
 | Name       | Description                                                                                                                   | Type   |
 | ---        | ---                                                                                                                           | ---    |
@@ -992,7 +991,7 @@ completed:
 ```
 
 To attach a photo to a story, the image must be uploaded via the
-[Image](/docs/01_Image) resource (example:
+Image resource (example:
 [Attach a photo to a status post story](#attach-a-photo-to-a-status-post-story)).
 
 To attach a video to a story, the video must be uploaded via FileMobile.
@@ -1785,10 +1784,6 @@ The format follows the above
 <a name="attach-a-photo-to-a-status-post-story" />
 ### Attach a photo to a status post story
 
-See [Image](/docs/01_Image) for details on the format required for posting an
-image. This example only shows the JSON-encoded object that should be provided
-as the "data" file in the multipart POST.
-
 In this example, the photo to the first attachments. The attachments to the
 story must be posted with attached placeholders when the initial story is
 created.
@@ -1915,7 +1910,7 @@ created.
 ### Attach a video to a status post story
 
 To attach a video to a story, the video must be uploaded via FileMobile using a
-[Filemobile session](/docs/01_Filemobile_Session). A session must be created or
+Filemobile session. A session must be created or
 updated for the authenticated user prior to every video upload.
 
 The sessiontoken, vhost and uid parameters should be populated from the token,
