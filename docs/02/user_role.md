@@ -17,7 +17,7 @@ doc_uri: 02_User_Role/
 A {{ page.title }} represents the role a user has for a specific resource or resource
 type.
 
-A role represents a collection of permissions (see [Role](/docs/{{ page.docs_version }}_Role)).
+A role represents a collection of permissions.
 
 
 ## Resource URIs

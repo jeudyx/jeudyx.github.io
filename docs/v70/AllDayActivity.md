@@ -10,7 +10,7 @@ permalink: /docs/v70_All_Day_Activity/
 # {{page.title}} resource
 
 This resource allows retrieval of activities bucketed by user's day. Also see [`Actigraphy`](/docs/{{page.versionhref}}_Actigraphy) and 
-[`Activity Time Series`](/docs/{{page.versionhref}}_Activity_Time_Series).
+[`Activity Time Series`](/docs/{{page.versionhref}}_All_Day_Activity_Time_Series).
 
 ## Resource URIs
 
