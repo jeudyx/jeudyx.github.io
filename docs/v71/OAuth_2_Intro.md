@@ -36,7 +36,7 @@ Instead, UA *asks* the user if they **authorize** your application to see their
 data. OAuth is simply a protocol for how that authorization gets handled and
 communicated between the user, Under Armour, and your application.
 
-The [OAuth 2 specification]([OAuth 2 protocol]) describes four types of
+The [OAuth 2 specification](http://tools.ietf.org/html/rfc6749) describes four types of
 *authorization grant* (i.e., ways for the user to authorize your app) designed
 for a variety of scenarios:
 

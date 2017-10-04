@@ -577,6 +577,4 @@ This example only shows the JSON-encoded object that should be provided as the "
 [api/0.1 User]: docs/01_User
 
 <!-- User Profile Photo -->
-[vx User Profile Photo]: docs/vx_User_Profile_Photo
 [v7.0 User Profile Photo]: docs/v70_User_Profile_Photo
-[api/0.1 User Profile Photo]: docs/01_User_Profile_Photo

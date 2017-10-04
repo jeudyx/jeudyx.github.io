@@ -144,7 +144,3 @@ via the User Permission resource.
     "total_count": 3
 }
 ```
-
-[vx User Permission]: docs/vx_User_Permission
-[v7.0 User Permission]: docs/v70_User_Permission
-[api/0.1 User Permission]: docs/01_User_Permission

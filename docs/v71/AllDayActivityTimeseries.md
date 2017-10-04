@@ -11,7 +11,7 @@ permalink: /docs/v71_All_Day_Activity_Time_Series/
 
 The `{{page.title}}` resource is intended for clients to persist time series data related to a user's passive activity. Currently supported time series are `energy_expended`, `distance`, and `steps`. See [Units](/docs/{{page.versionhref}}_Units) for information on units.
 
-For proper identification, the client will need to send a [`data_source`](/docs/{{page.versionhref}}_Data_Source) as either an embedded object or a link.
+For proper identification, the client will need to send a [`data_source`](/docs/{{page.versionhref}}_DataSource) as either an embedded object or a link.
 
 Each series can have a maximum of 11,520 points which is equivalent to 8 days of one minute resolution.  There is also
 a limit of 8 days difference between the first time series point and the last.  Clients should take care that they send
@@ -116,7 +116,7 @@ After adding time series data with this endpoint, clients will typically see it 
 
 ## Usage
 
-### Saving an {{page.title}} dataset with a linked [Data Source](/docs/{{page.versionhref}}_Data Source)
+### Saving an {{page.title}} dataset with a linked [Data Source](/docs/{{page.versionhref}}_DataSource)
 
 ###### Request `POST /{{page.version}}/allday_activity_timeseries/`
 

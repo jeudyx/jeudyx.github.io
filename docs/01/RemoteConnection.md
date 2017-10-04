@@ -3,7 +3,7 @@ layout: documentation
 title: Remote Connection
 resource: Remote Connection
 version: api/0.1
-versionhref: 01
+versionhref: '01'
 permalink: /docs/01_Remote_Connection/
 ---
 

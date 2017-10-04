@@ -180,7 +180,7 @@ Downloading/unpacking requests
 
 [IPython]: http://ipython.org/
 [Requests]: http://docs.python-requests.org
-[requests-oauthlib]: https://crate.io/packages/requests-oauthlib/
+[requests-oauthlib]: https://pypi.python.org/pypi/requests-oauthlib
 [oauthlib]: https://readthedocs.org/projects/oauthlib/
 
 ### Step 3: Prompt a user to authorize the Client Application

@@ -47,7 +47,6 @@ A public {{ page.title }} (see [Page Type](/docs/{{ page.path_version }}_Page_Ty
 | `url` | URL to the web representation of this page. | text | **GET**: required, **PUT**: required, **PATCH**: required, **POST**: required |
 | `website` | The URL to the official website of the entity (ex. http://www.mistycopeland.com) | text | **GET**: required, **PUT**: required, **PATCH**: required, **POST**: required |
 | `location` | The location of the user. | text | **GET**: required, **PUT**: required, **PATCH**: required, **POST**: required |
-| `profile_photo` | Profile photos are available for public_figure and public_entity [Page Type](/docs/{{ page.path_version }}_Page_Type).  To access the profile photo for the user associated with a personal page see [User Profile Photo](/docs/{{ page.docs_version }}_User_Profile_Photo). | text | **GET**: required, **PUT**: required, **PATCH**: required, **POST**: required |
 | `settings` | Currently this property is read only. | text | **GET**: optional |
 | `cover_photo` | Cover photos are available for public_figure and public_entity [Page Type](/docs/{{ page.path_version }}_Page_Type). | text | **GET**: required, **PUT**: required, **PATCH**: required, **POST**: required |
 
@@ -571,6 +570,4 @@ This example only shows the JSON-encoded object that should be provided as the "
 [api/0.1 User]: docs/01_User
 
 <!-- User Profile Photo -->
-[vx User Profile Photo]: docs/vx_User_Profile_Photo
 [v7.0 User Profile Photo]: docs/v70_User_Profile_Photo
-[api/0.1 User Profile Photo]: docs/01_User_Profile_Photo
