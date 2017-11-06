@@ -20,6 +20,6 @@ Under Armour cannot enforce the security of your application, and we reserve the
 
 If you're having users connect your application with their Under Armour accounts, you are required to use the following images for the log in button:
 
-![xlarge logo](//developer-ua.mapmyfitness.com.s3.amazonaws.com/assets/login_buttons/UA-login_btn-xlarge.png)
-![large logo](//developer-ua.mapmyfitness.com.s3.amazonaws.com/assets/login_buttons/UA-login_btn-large.png)
-![medium loglo](//developer-ua.mapmyfitness.com.s3.amazonaws.com/assets/login_buttons/UA-login_btn-medium.png)
+![xlarge logo](//assets.developer.underarmour.com/assets/login_buttons/UA-login_btn-xlarge.png)
+![large logo](//assets.developer.underarmour.com/assets/login_buttons/UA-login_btn-large.png)
+![medium logo](//assets.developer.underarmour.com/assets/login_buttons/UA-login_btn-medium.png)
