@@ -1,0 +1,71 @@
+---
+layout: documentation
+title: Client Key Update
+permalink: /updatekey/
+---
+
+<section class="faq">
+
+  <div style="float: right;">
+    <a href="https://uacfsupport.zendesk.com/" class="button button-red" style="float: right; width: 100px;">Help</a>
+  </div>
+
+  <h1>Update your client key data</h1>
+
+  <section>
+    <p>Now you can update your application name and callback url by calling and endpoint we have enabled.</p>
+    <p>You need your Api-Key (the one you want to update) and a valid token (client credentials) that you can generate following <a href="https://developer.underarmour.com/docs/v71_OAuth_2_Client_Creds/" target="_blank">these steps</a>.</p>
+  </section>
+
+  <section>
+    <h2>Usage</h2>
+
+    <p>You need to send a <b>PATCH</b> request with the usual Api-Key and Authorization headers. The payload can include the following parameters:
+        <br/>
+        <table style="width: 100%">
+            <thead style="background: #e3e3e3; text-align: left"><tr><th>Param</th><th>Value</th></tr></thead>
+            <tbody>
+                <tr>
+                    <td><i>callback_uri</i></td>
+                    <td>The new callback uri</td>
+                </tr>
+                <tr>
+                    <td><i>application_title</i></td>
+                    <td>The new application name you want to appear in the OAuth2 page for your users</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <pre>
+        import requests
+        import json
+
+        url = 'https://api.ua.com/v7.2/api_client/<your client key>/'
+
+        headers = {'Authorization': 'Bearer <your token>', 'Api-Key': '<your client key>'}
+
+        data = {'callback_uri': 'https://www.exampleredirect.com/uacf/', 'application_title': 'New App Name'}
+
+        requests.patch(url, headers=headers, data=json.dumps(data))
+
+        </pre>
+    </p>
+
+    <p>
+        Then you can issue a GET request to the send endpoint, using your client key, to verify that the record was updated correctly.
+        <pre>
+        import requests
+
+        url = 'https://api.ua.com/v7.2/api_client/<your client key>/'
+
+        headers = {'Authorization': 'Bearer <your token>', 'Api-Key': '<your client key>'}
+
+        key_data = requests.get(url, headers=headers)
+
+        </pre>
+
+    </p>
+
+  </section>
+
+</section>
