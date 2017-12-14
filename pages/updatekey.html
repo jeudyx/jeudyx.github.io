@@ -40,9 +40,9 @@ permalink: /updatekey/
         import requests
         import json
 
-        url = 'https://api.ua.com/v7.2/api_client/<your client key>/'
+        url = 'https://api.ua.com/v7.2/api_client/yourclientkey/'
 
-        headers = {'Authorization': 'Bearer <your token>', 'Api-Key': '<your client key>'}
+        headers = {'Authorization': 'Bearer yourtoken', 'Api-Key': 'yourclient key'}
 
         data = {'callback_uri': 'https://www.exampleredirect.com/uacf/', 'application_title': 'New App Name'}
 
@@ -56,9 +56,9 @@ permalink: /updatekey/
         <pre>
         import requests
 
-        url = 'https://api.ua.com/v7.2/api_client/<your client key>/'
+        url = 'https://api.ua.com/v7.2/api_client/yourclientkey/'
 
-        headers = {'Authorization': 'Bearer <your token>', 'Api-Key': '<your client key>'}
+        headers = {'Authorization': 'Bearer yourtoken', 'Api-Key': 'yourclientkey'}
 
         key_data = requests.get(url, headers=headers)
 
