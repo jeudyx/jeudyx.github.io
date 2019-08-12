@@ -1,8 +1,8 @@
 ---
 layout: documentation
 title: OAuth 2 Client Credentials
-permalink: /docs/v71_OAuth_2_Client_Creds/
-version: v7.1
+permalink: /docs/02_OAuth_2_Client_Creds/
+version: v0.2
 ---
 
 # <a name="client_credentials"></a> Client Credentials
@@ -33,3 +33,28 @@ should have the following parameters:
 * Unlike most of our API, requests to the **access token endpoint** are required by the specifications to have a content
   type of `application/x-www-form-urlencoded`.
 * The legacy endpoint URL `https://oauth2-api.mapmyapi.com/{{ page.version }}/oauth2/access_token/` is interchangeable.
+
+### Example
+
+This is a Python example of how to make a valid client credentials request.
+
+```
+import requests
+
+url = 'https://oauth2-api.mapmyapi.com/v7.1/oauth2/access_token/'
+
+CLIENT_KEY = '<Your client key>'
+CLIENT_SECRET = '<Your client secret>'
+
+headers = {'Api-Key': CLIENT_KEY, 'Content-Type': 'application/x-www-form-urlencoded'}
+
+data = {'grant_type': 'client_credentials', 'client_id': CLIENT_KEY, 'client_secret': CLIENT_SECRET}
+
+response = requests.post(url, data=data, headers=headers)
+```
+
+`response` should return 200 and `response.content` should contain the new access token.
+
+Notice you need to include your API_KEY in both the headers and in the data.
+
+Use your own api key and secret pair when you try it.
