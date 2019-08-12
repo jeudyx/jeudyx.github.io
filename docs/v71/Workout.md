@@ -40,7 +40,6 @@ deliberate physical activity, as opposed to accumulating steps by passively walk
 | `reference_key`                     | Represents a {{page.title}} uniquely in environment in which the {{page.title}} was recorded.                                                                                                                                                                                                                                                    | String.                                                   |                                              | **GET:** required **POST:** optional **PUT:** optional                                                                                                           |
 | `source`                            | The name of the source that recorded the {{page.title}}.                                                                                                                                                                                                                                                                                  | String.                                                   |                                              | **GET:** required                                                                                                                                                |
 | `attachments`                       | For attaching an image to this {{page.title}}. See [`Image`](/docs/{{page.versionhref}}_Image) and [`Activity Story`](/docs/{{page.versionhref}}_Activity_Story).                                                                                                                                                                                                                 | {ATTACHMENTS} object.                                     |                                              | **POST:** optional **PUT:** optional                                                                                                                             |
-| `mentions`                          | An array of [`User`](/docs/{{page.versionhref}}_User) and/or [`Page`](/docs/{{page.versionhref}}_Page) mentions associated with this {{page.title}}. Start and end indexes refer to the `notes` attribute.                                                                                                                                                                        | Array of mention objects.                                 |                                              | **POST:** optional **PUT:** optional                                                                                                                             |
 | `sharing`                           | Dictionary indicating which social networks to share this {{page.title}} with. Valid keys are `facebook` and `twitter`.                                                                                                                                                                                                                   | Dictionary of sharing indicators.                         |                                              | **POST:** optional **PUT:** optional                                                                                                                             |
 | `notes`                             | The notes that describe the {{page.title}}.                                                                                                                                                                                                                                                                                               | String.                                                   |                                              | **GET:** required **POST:** optional **PUT:** optional                                                                                                           |
 | `aggregates`                        | The aggregates are a simple key-value dictionary. Some keys are represented discretely, while others are cumulative.                                                                                                                                                                                                               | {AGGREGATES} object.                                      |                                              | **GET:** required **POST:** required **PUT:** required                                                                                                           |
@@ -129,37 +128,37 @@ deliberate physical activity, as opposed to accumulating steps by passively walk
 
 ```json
 {
-    "start_datetime": "2014-08-05T01:36:56+00:00",
+    "start_datetime": "2014-08-04T01:36:56+00:00",
     "name": "Hiked 2.22 mi on 08\/04\/2014",
     "updated_datetime": "2014-08-05T01:20:23+00:00",
     "created_datetime": "2014-08-05T01:20:23+00:00",
-    "notes": "",
+    "notes": "A great workout!",
     "reference_key": null,
     "start_locale_timezone": "America\/Los_Angeles",
     "source": "Android_Hike",
     "_links": {
         "privacy": [{
-            "href": "\/{{page.version}}\/privacy_option\/3\/",
-            "id": "3"
+            "href": "\/{{page.version}}\/privacy_option\/{privacy_option_id}\/",
+            "id": "{privacy_option_id}"
         }],
         "self": [{
-            "href": "\/{{page.version}}\/workout\/{Workout ID}\/",
-            "id": "{Workout ID}"
+            "href": "\/{{page.version}}\/workout\/{id}\/",
+            "id": "{id}"
         }],
         "documentation": [{
             "href": "https:\/\/developer.underarmour.com\/docs\/${doc_uri}"
         }],
         "user": [{
-            "href": "\/{{page.version}}\/user\/{User ID}\/",
-            "id": "{User ID}"
+            "href": "\/{{page.version}}\/user\/{user_id}\/",
+            "id": "{user_id}"
         }],
         "route": [{
-            "href": "\/{{page.version}}\/route\/{Route ID}\/",
-            "id": "{Route ID}"
+            "href": "\/{{page.version}}\/route\/{route_id}\/",
+            "id": "{route_id}"
         }],
         "activity_type": [{
-            "href": "\/{{page.version}}\/activity_type\/109\/",
-            "id": "109"
+            "href": "\/{{page.version}}\/activity_type\/{activity_type_id}\/",
+            "id": "{activity_type_id}"
         }]
     },
     "has_time_series": true,
@@ -187,7 +186,7 @@ deliberate physical activity, as opposed to accumulating steps by passively walk
 
 ### GET {{page.title}} collection
 
-###### Request `GET: /{{page.version}}/workout/?user={User ID}`
+###### Request `GET: /{{page.version}}/workout/?user={user_id}`
 
 ###### Response
 
@@ -195,7 +194,7 @@ deliberate physical activity, as opposed to accumulating steps by passively walk
 {
     "_links": {
         "self": [{
-            "href": "\/{{page.version}}\/workout\/?limit=20&user={User ID}&offset=0"
+            "href": "\/{{page.version}}\/workout\/?limit=20&user={user_id}&offset=0"
         }],
         "documentation": [{
             "href": "https:\/\/developer.underarmour.com\/docs\/${doc_uri}"
@@ -207,30 +206,30 @@ deliberate physical activity, as opposed to accumulating steps by passively walk
             "name": "Hiked 4.41 mi on 06\/23\/2014",
             "updated_datetime": "2014-06-24T02:27:22+00:00",
             "created_datetime": "2014-06-24T02:27:22+00:00",
-            "notes": "",
+            "notes": "A great workout!",
             "reference_key": null,
             "start_locale_timezone": "America\/Los_Angeles",
             "source": "Android_Hike",
             "_links": {
                 "self": [{
-                    "href": "\/{{page.version}}\/workout\/{Workout ID}\/",
-                    "id": "{Workout ID}"
+                    "href": "\/{{page.version}}\/workout\/{workout_id}\/",
+                    "id": "{workout_id}"
                 }],
                 "route": [{
-                    "href": "\/{{page.version}}\/route\/{Route ID}\/",
-                    "id": "{Route ID}"
+                    "href": "\/{{page.version}}\/route\/{route_id}\/",
+                    "id": "{route_id}"
                 }],
                 "activity_type": [{
-                    "href": "\/{{page.version}}\/activity_type\/109\/",
-                    "id": "109"
+                    "href": "\/{{page.version}}\/activity_type\/{activity_type_id}\/",
+                    "id": "{activity_type_id}"
                 }],
                 "user": [{
-                    "href": "\/{{page.version}}\/user\/{User ID}\/",
-                    "id": "{User ID}"
+                    "href": "\/{{page.version}}\/user\/{user_id}\/",
+                    "id": "{user_id}"
                 }],
                 "privacy": [{
-                    "href": "\/{{page.version}}\/privacy_option\/3\/",
-                    "id": "3"
+                    "href": "\/{{page.version}}\/privacy_option\/{privacy_option_id}\/",
+                    "id": "{privacy_option_id}"
                 }]
             },
             "has_time_series": true,
@@ -257,33 +256,18 @@ deliberate physical activity, as opposed to accumulating steps by passively walk
 {
     "start_datetime": "2014-02-26T20:32:33.768863Z",
     "name": "Sample Workout JSON",
-    "privacy": "/{{page.version}}/privacy_option/1/",
+    "privacy": "/{{page.version}}/privacy_option/{privacy_option_id}/",
     "attachments": {
         "items": [ {
             "object": {
                 "type": "photo"
                 }
-            } ]
-        }
-    }
-    "mentions": [
-        {
-            "type": "user",
-            "id": "/{{page.version}}/user/42976235/",
-            "start_index": 20,
-            "end_index": 27
-        },
-        {
-            "type": "page",
-            "id": "/{{page.version}}/page/54362782/",
-            "start_index": 30,
-            "end_index": 42
-        }
-    ],
+        } ]
+    },
     "sharing": {
         "facebook": true,
         "twitter": false
-    }
+    },
     "aggregates": {
         "active_time_total": 10.7,
         "torque_min": 10.7,
@@ -321,7 +305,7 @@ deliberate physical activity, as opposed to accumulating steps by passively walk
         "cadence": [[0, 32], [1, 36], [2, 34]]
     },
     "start_locale_timezone": "US/Central",
-    "activity_type": "/{{page.version}}/activity_type/{id}
+    "activity_type": "/{{page.version}}/activity_type/{activity_type_id}"
 }
 ```
 
@@ -331,7 +315,7 @@ deliberate physical activity, as opposed to accumulating steps by passively walk
 {
    "start_datetime":"2014-02-26T20:32:33.768863Z",
    "name":"Sample Workout JSON",
-   "privacy":"/{{page.version}}/privacy_option/1/",
+   "privacy":"/{{page.version}}/privacy_option/{privacy_option_id}/",
    "aggregates":{
       "active_time_total":10.7,
       "torque_min":10.7,
@@ -494,7 +478,29 @@ deliberate physical activity, as opposed to accumulating steps by passively walk
       ]
    },
    "start_locale_timezone":"US/Central",
-   "activity_type":"/{{page.version}}/activity_type/11/"
+   "activity_type":"/${version}/activity_type/{activity_type_id}/",
+   "_links": {
+      "self": [{
+        "href": "\/${version}\/workout\/{workout_id}\/",
+        "id": "{workout_id}"
+      }],
+      "route": [{
+        "href": "\/${version}\/route\/{route_id}\/",
+        "id": "{route_id}"
+      }],
+      "activity_type": [{
+        "href": "\/${version}\/activity_type\/{activity_type_id}\/",
+        "id": "{activity_type_id}"
+      }],
+      "user": [{
+        "href": "\/${version}\/user\/{user_id}\/",
+        "id": "{user_id}"
+      }],
+      "privacy": [{
+        "href": "\/${version}\/privacy_option\/{privacy_option_id}\/",
+        "id": "{privacy_option_id}"
+      }]
+   }
 }
 ```
 
@@ -506,7 +512,7 @@ deliberate physical activity, as opposed to accumulating steps by passively walk
 {
     "start_datetime": "2014-02-26T20:32:33.768863Z",
     "name": "Sample Workout JSON",
-    "privacy": "/{{page.version}}/privacy_option/1/",
+    "privacy": "/{{page.version}}/privacy_option/{privacy_option_id}/",
     "aggregates": {
         "active_time_total": 10.7,
         "torque_min": 10.7,
@@ -544,12 +550,202 @@ deliberate physical activity, as opposed to accumulating steps by passively walk
         "cadence": [[0, 32], [1, 36], [2, 34]]
     },
     "start_locale_timezone": "US/Central",
-    "activity_type": "/{{page.version}}/activity_type/{pk}
+    "activity_type": "/{{page.version}}/activity_type/{activity_type_id}"
 }
 ```
 
 ###### Response
 
-```
-... Same as POST ...
+```json
+{
+   "start_datetime":"2014-02-26T20:32:33.768863Z",
+   "name":"Sample Workout JSON",
+   "privacy":"/${version}/privacy_option/{privacy_option_id}/",
+   "aggregates":{
+      "active_time_total":10.7,
+      "torque_min":10.7,
+      "power_min":10.7,
+      "distance_total":10.7,
+      "cadence_max":10.7,
+      "speed_max":10.7,
+      "speed_min":10.7,
+      "heartrate_min":100,
+      "cadence_min":10.7,
+      "speed_avg":10.7,
+      "torque_max":10.7,
+      "cadence_avg":10.7,
+      "power_avg":10.7,
+      "heartrate_max":160,
+      "power_max":10.7,
+      "elapsed_time_total":10.7,
+      "heartrate_avg":10.7,
+      "metabolic_energy_total":10.7,
+      "torque_avg":10.7
+   },
+   "time_series":{
+      "distance":[
+         [
+            0,
+            65
+         ],
+         [
+            1,
+            54
+         ],
+         [
+            2,
+            35
+         ]
+      ],
+      "heartrate":[
+         [
+            0,
+            100
+         ],
+         [
+            1,
+            120
+         ],
+         [
+            2,
+            110
+         ]
+      ],
+      "power":[
+         [
+            0,
+            123
+         ],
+         [
+            1,
+            120
+         ],
+         [
+            2,
+            115
+         ]
+      ],
+      "timer_stop":[
+         [
+            1,
+            1
+         ],
+         [
+            3,
+            4
+         ],
+         [
+            8,
+            20
+         ]
+      ],
+      "torque":[
+         [
+            0,
+            21
+         ],
+         [
+            1,
+            64
+         ],
+         [
+            2,
+            98
+         ]
+      ],
+      "steps":[
+         [
+            0,
+            21
+         ],
+         [
+            1,
+            32
+         ],
+         [
+            2,
+            31
+         ]
+      ],
+      "position":[
+         [
+            0,
+            {
+               "lat":107.134,
+               "lng":75.234,
+               "elevation":5
+            }
+         ],
+         [
+            1,
+            {
+               "lat":107.1356,
+               "lng":75.123,
+               "elevation":5.2
+            }
+         ],
+         [
+            2,
+            {
+               "lat":107.1365,
+               "lng":75.012,
+               "elevation":5.3
+            }
+         ]
+      ],
+      "speed":[
+         [
+            0,
+            7.5
+         ],
+         [
+            1,
+            8.5
+         ],
+         [
+            2,
+            8.2
+         ]
+      ],
+      "cadence":[
+         [
+            0,
+            32
+         ],
+         [
+            1,
+            36
+         ],
+         [
+            2,
+            34
+         ]
+      ]
+   },
+   "start_locale_timezone":"US/Central",
+   "activity_type":"/${version}/activity_type/{activity_type_id}/",
+   "_links": {
+      "self": [{
+        "href": "\/${version}\/workout\/{workout_id}\/",
+        "id": "{workout_id}"
+      }],
+      "route": [{
+        "href": "\/${version}\/route\/{route_id}\/",
+        "id": "{route_id}"
+      }],
+      "activity_type": [{
+        "href": "\/${version}\/activity_type\/{activity_type_id}\/",
+        "id": "{activity_type_id}"
+      }],
+      "user": [{
+        "href": "\/${version}\/user\/{user_id}\/",
+        "id": "{user_id}"
+      }],
+      "privacy": [{
+        "href": "\/${version}\/privacy_option\/{privacy_option_id}\/",
+        "id": "{privacy_option_id}"
+      }]
+   }
+}
+
 ```
