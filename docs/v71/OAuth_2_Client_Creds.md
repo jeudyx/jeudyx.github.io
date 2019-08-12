@@ -1,8 +1,8 @@
 ---
 layout: documentation
 title: OAuth 2 Client Credentials
-permalink: /docs/02_OAuth_2_Client_Creds/
-version: v0.2
+permalink: /docs/v71_OAuth_2_Client_Creds
+version: v7.1
 ---
 
 # <a name="client_credentials"></a> Client Credentials
