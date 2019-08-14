@@ -20,6 +20,8 @@ function handleDocsSourceChange (evt) {
   console.log(evt.target.value);
   if (evt.target.value === 'uacf') {
     window.location = '/docs';
+  } else if (evt.target.value === 'uacf') {
+    window.location = '/docs/mfp';
   }
 }
 
@@ -40,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   if (docsSourceSelect) {
-    versionSelect.addEventListener('change', handleDocsSourceChange)
+    docsSourceSelect.addEventListener('change', handleDocsSourceChange)
   }
 
   if (sideNav) {
