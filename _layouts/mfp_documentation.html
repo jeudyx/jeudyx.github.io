@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body>
+    {% include header.html %}
+    <article class="content">
+      <section class="container two-cols">
+        <div class="sidebar col-1">
+          {% include mfp_sidenav.html %}
+        </div>
+        <div class="main col-2 documentation">
+          {{ content }}
+        </div>
+      </section>
+    </article>
+    {% include footer.html %}
+  </body>
+</html>
