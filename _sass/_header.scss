@@ -165,10 +165,11 @@ body {
 
 /* Dropdown Button */
 .site-nav-dropbtn {
-  background-color: #4CAF50;
-  color: white;
+  background-color: white;
+  color: #333;
   padding: 16px;
   font-size: 16px;
+  font-weight: 500;
   border: none;
 }
 
@@ -195,6 +196,6 @@ body {
 
 .site-nav-dropdown-content a:hover {background-color: #ddd;}
 
-.site-nav-dropdown:hover .dropdown-content {display: block;}
+.site-nav-dropdown:hover .site-nav-dropdown-content {display: block;}
 
-.site-nav-dropdown:hover .dropbtn {background-color: #3e8e41;}
+.site-nav-dropdown:hover .site-nav-dropbtn {color: #b3b3b3;}
