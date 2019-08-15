@@ -2,6 +2,7 @@
 var siteNav = document.querySelector('.site-nav')
 var siteNavButton = document.querySelector('.site-nav-button')
 var versionSelect = document.querySelector('#api_version')
+var docsSourceSelect = document.querySelector('#docs_source')
 var sideNav = document.querySelector('.sidenav')
 
 function toggleSiteNav (argument) {
@@ -13,6 +14,15 @@ function handleVersionChange (evt) {
   sideNav.classList.remove('v71', 'v70', 'v01', 'v02', 'vx')
   sideNav.classList.add(version)
   document.body.scrollTop = document.documentElement.scrollTop = 0;
+}
+
+function handleDocsSourceChange (evt) {
+  console.log(evt.target.value);
+  if (evt.target.value === 'uacf') {
+    window.location = '/docs';
+  } else if (evt.target.value === 'uacf') {
+    window.location = '/docs/mfp';
+  }
 }
 
 function initActiveClass () {
@@ -29,6 +39,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
   if (versionSelect) {
     versionSelect.addEventListener('change', handleVersionChange)
+  }
+
+  if (docsSourceSelect) {
+    docsSourceSelect.addEventListener('change', handleDocsSourceChange)
   }
 
   if (sideNav) {
