@@ -30,6 +30,7 @@ function initActiveClass () {
   if (path.match(/^\/docs/)) { siteNav.classList.add('docs') }
   if (path.match(/^\/blog/)) { siteNav.classList.add('blog') }
   if (path.match(/^\/signup/)) { siteNav.classList.add('signup') }
+  if (path.match(/^\/updatekey/)) { siteNav.classList.add('updatekey') }
 }
 
 document.addEventListener('DOMContentLoaded', function () {
