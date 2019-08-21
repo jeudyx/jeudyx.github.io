@@ -5,7 +5,6 @@
   <a href="{{ site.github.url }}/docs-mpf/domains">Domains</a>
   <a href="{{ site.github.url }}/docs-mpf/versioning">Versioning</a>
   <a href="{{ site.github.url }}/docs-mpf/example-urls">Example URLs</a>
-
   <h3>General</h3>
   <a href="{{ site.github.url }}/docs-mpf/identifiers">Identifiers</a>
   <a href="{{ site.github.url }}/docs-mpf/supported-data-formats">Supported Data Formats</a>
@@ -22,4 +21,37 @@
     <a href="{{ site.github.url }}/docs-mpf/response-body">Response Body</a>
     <a href="{{ site.github.url }}/docs-mpf/error-responses">Error Responses</a>
     <a href="{{ site.github.url }}/docs-mpf/standard-responses">Standard Responses</a>
+  <h3>Authentication and Authorization</h3>  
+    <a href="{{ site.github.url }}/docs-mpf/partner-authentication">Partner Authentication</a>
+    <a href="{{ site.github.url }}/docs-mpf/user-authentication">User Authorization</a>
+    <h5>Authorization Code Grant (GET /oauth2/auth)</h5>
+      <a href="{{ site.github.url }}/docs-mpf/request-query-parameters">Request query parameters</a>
+      <a href="{{ site.github.url }}/docs-mpf/auth-example-1">Example 1: Requesting the diary scope</a>
+      <a href="{{ site.github.url }}/docs-mpf/auth-example-2">Example 2: Requesting all available scopes</a>
+      <a href="{{ site.github.url }}/docs-mpf/auth-response">Response</a>
+      <a href="{{ site.github.url }}/docs-mpf/auth-errors">Authorization Errors</a>
+    <h5>Access Token Request (POST /oauth2/token)</h5>
+      <a href="{{ site.github.url }}/docs-mpf/request-body-form-parameters">Request body form parameters</a>
+      <a href="{{ site.github.url }}/docs-mpf/post-response">Response</a>
+      <a href="{{ site.github.url }}/docs-mpf/access-token-errors">Access Token Errors</a>
+    <h5>Refreshing Access Tokens (POST /oauth2/token)</h5>
+      <a href="{{ site.github.url }}/docs-mpf/refresh-request-body-form-parameters">Request body form parameters</a>
+      <a href="{{ site.github.url }}/docs-mpf/refresh-post-response">Response</a>
+      <a href="{{ site.github.url }}/docs-mpf/refresh-token-errors">Refresh Token Errors</a>
+    <a href="{{ site.github.url }}/docs-mpf/making-requests">Making Requests</a>
+    
+    <h5>Revoking Tokens (POST /oauth2/revoke)</h5>
+      <a href="{{ site.github.url }}/docs-mpf/revoke-request-body-form-parameters">Request body form parameters</a>
+      <a href="{{ site.github.url }}/docs-mpf/revoke-response">Response</a>
+  <h3>Users</h3>  
+    <h5>Resources GET /users/:userId</h5>
+      <a href="{{ site.github.url }}/docs-mpf/example-response-no-fields-parameter">Example Response with no fields parameter</a>
+      <a href="{{ site.github.url }}/docs-mpf/example-response-with-fields-parameter">Example Response with fields elements</a>
+    <h5>Resources PATCH /users/:userId</h5>
+      <a href="{{ site.github.url }}/docs-mpf/patch-request-example">Request Example</a>
+  <h3>Measurements</h3>
+    <h5>Resources</h5>
+      <a href="{{ site.github.url }}/docs-mpf/measurements-get">GET /measurements/</a>
+      <a href="{{ site.github.url }}/docs-mpf/measurements-post">POST /measurements/</a>
+      
 </div>
