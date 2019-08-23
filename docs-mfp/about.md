@@ -4,7 +4,7 @@ title: MyFitnessPal Developer - About
 permalink: /docs-mpf/about/
 ---
 
-# Title - about
+# About this API
 
 This application programming interface (API) is designed to be RESTful, meaning that various items such as exercises, users, and diary entries—collectively known as resources—can be created, retrieved, updated, and deleted using HTTP methods. Efforts have been made to use and adhere to web standards and best practices, to ensure a consistent API experience across clients and platforms.
 
@@ -25,5 +25,5 @@ Requests to this API use the following HTTP methods:
     ● PATCH: updating a resource. The specification for the PATCH method (see: ​RFC 5789)​ states:
         The PATCH method requests that a set of changes described in the request entity be applied to the resource identified by the Request­URI.
 
-    This API defines "a set of changes" as t​ he properties present in the request body of a resource representation.​ This means that performing a PATCH on a resource updates only​ the properties contained in the body of the request. The absence of a property from the body of a PATCH request means that property ​must not​ be changed by the request, with the exception of automatic properties, such as last­updated­time.
+    This API defines "a set of changes" as t​he properties present in the request body of a resource representation.​ This means that performing a PATCH on a resource updates only​ the properties contained in the body of the request. The absence of a property from the body of a PATCH request means that property ​must not​ be changed by the request, with the exception of automatic properties, such as last­updated­time.
 
