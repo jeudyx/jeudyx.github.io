@@ -4,11 +4,63 @@ title: MyFitnessPal Developer - GET Request Query Parameter
 permalink: /docs-mpf/get-request-query-param/
 ---
 
-# Title - get-request-query-param
+# GET Request Query Parameter
 
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+The following query­string parameter may be included with most requests made to the API.
 
+**Name** | **Description** | **Type** | **Required** | **Sample Value** | **Default Value**
+ --- | --- | --- | --- | --- | ---
+ fields* | Include the indicated property or properties in the resource representation. | Array(String) | N | [energy, exercise] | none (return only properties that are not complex objects, e.g. integers, strings)
+ 
+ \*​In all ​**fields**​ examples contained in this document, the square brackets are not URL­encoded to assist readability, though in real­world requests, they must be URL­encoded.
+ 
+ The ​**fields**​ query parameter allows clients to limit responses to those complex properties that are of interest, thereby reducing network and memory usage.
+ 
+ Consider the following examples, which illustrate how the response content of a Diary resource changes based on the presence and value of the **fields**​ query parameter.
+ 
+ **Example 1: No *​fields***
+ 
+ Request: ​GET /diary/9348fwn4go89v48ghg
+ 
+ Response body:
+ 
+    {
+    "item":
+         {
+           "id": "9348fwn4go89v48ghg",
+           "type": "exercise",
+           "date": "2014-07-15",
+           "start_time": "2014-07-15T08:30:05-07:00",
+           "duration": 2700
+        } 
+    }
+    
 
-## Subtitle
+**Example 2: ​fields: ​energy, exercise**
 
-Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+Request: ​GET /diary/9348fwn4go89v48ghg?fields[]=energy&fields[]=exercise
+
+Response body:
+
+    {
+    "item":
+            {
+              "id": "9348fwn4go89v48ghg",
+              "type": "exercise",
+              "date": "2014-07-15",
+              "start_time": "2014-05-06T08:30:05-07:00",
+              "duration": 2700,
+              "energy": {
+                "unit": "calories",
+                "value": 500
+              },
+              "exercise": {
+                "id": "b95n9898878f4",
+                "version": "g8v7h",
+                "type": "cardio",
+                "description": "Curling",
+                "mets": 4.0,
+                "public": true
+                } 
+            }
+    }
