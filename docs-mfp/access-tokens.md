@@ -4,11 +4,13 @@ title: MyFitnessPal Developer - Access Tokens and related information
 permalink: /docs-mpf/access-tokens/
 ---
 
-# Title - access-tokens
+# Access Token and Related Information
 
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+All requests made against the API (except for Authentication and Authorization) require an access token. The access token must be passed as part of the HTTP Authorization Header (per ​http://tools.ietf.org/html/rfc6749#page­49​ Section 7.1). In addition to the access token, the following non­standard HTTP headers1 related to the access token must be included:
 
-
-## Subtitle
-
-Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+**Name** | **Description** | **Type** | **Required** | **Default Value**
+ --- | --- | --- | --- | ---
+ mfp-client-id | Client id associated with the token. | String | Y | N/A
+ mfp-user-id | Unique user id associated with the token. | String | N | none
+ 
+ The values of these headers must match those associated with the access token. (If any of the values associated with the access token is nil, the corresponding header may be omitted.)
