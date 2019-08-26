@@ -6,4 +6,4 @@ permalink: /docs-mpf/domains/
 
 # Production Environment
 
-All production­environment requests will use the hostname **​api.myfitnesspal.com.​**
+All production-environment requests will use the hostname **​api.myfitnesspal.com.​**
