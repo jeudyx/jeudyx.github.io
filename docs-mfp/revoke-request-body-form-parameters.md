@@ -4,12 +4,26 @@ title: MyFitnessPal Developer - Request body form parameters
 permalink: /docs-mpf/revoke-request-body-form-parameters/
 ---
 
-# Title - revoke-request-body-form-parameters
+# Revoking Tokens
 
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+Partners may revoke access and refresh tokens at any time. This process follows the standard described in ​[RFC 7009](https://tools.ietf.org/html/rfc7009)​. Revoked tokens may continue to be accepted for a brief period, as the revocation propagates to all server­side caches and data stores.
 
+    POST ​/oauth2/revoke
+    
+If the included token is a refresh token, the associated access token will automatically be revoked. If it is an access token, any associated refresh tokens will also be revoked.
 
-## Subtitle
+This request must be accompanied by an Authorization header, which is assembled using HTTP Basic Authentication. The ​**username​** field must be the partner's client identifier, and the **password​** field must be the partner's client secret. An example of this header:
 
-Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+    Authorization: Basic Tmluy1aGVcnk6NmxMmQwOW4MTA2NzE4ZDg2nU=
 
+The contents of this request are submitted as standard form parameters. The Content-Type header must be:
+
+    Content-Type: x-www-form-urlencoded
+
+## Request body form parameters
+
+**Name** | **Description** | **Required**
+ :--- | --- | :---:
+ token | The access or refresh token being revoked | Y
+ token_type_hint | The type of token being revoked. Must be either **​access_token**​ or **refresh_token**
+ 
