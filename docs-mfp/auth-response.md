@@ -4,12 +4,13 @@ title: MyFitnessPal Developer - Response
 permalink: /docs-mpf/auth-response/
 ---
 
-# Title - auth-response
+# Response
 
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+A successful response will be a redirect to the path contained in the ​redirect_uri​ query parameter, with the following query parameters added:
 
-
-## Subtitle
-
-Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
-
+**Names** | **Description** 
+ :---: | --- 
+ code | The authorization code. Clients may expect this code to be approximately forty (40) characters long.
+ state | If the request included a **​state**​ parameter, this will contain that same value. (If no **state**​ value was included, this parameter will not be appended to the redirect.)
+ 
+ The authorization code will expire after ten (10) minutes. The OAuth 2.0 specification stipulates that it may be used no more than once, and that if a subsequent attempt is made to use the code, then the request should be denied and all access tokens associated with it should be revoked.

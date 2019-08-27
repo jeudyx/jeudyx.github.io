@@ -4,9 +4,14 @@ title: MyFitnessPal Developer - Request query parameters
 permalink: /docs-mpf/request-query-parameters/
 ---
 
-# Request Query Parameters
+# Authorization Code Grant
+
+This is the first step in the process, the granting of a single-use authorization code.
 
     GET ​/oauth2/auth
+
+
+## Request Query Parameters
 
 **Name** | **Description** | **Required**
  :--- | --- | :---:
