@@ -4,11 +4,27 @@ title: MyFitnessPal Developer - Standard Responses
 permalink: /docs-mpf/standard-responses/
 ---
 
-# Title - standard-responses
+# Standard Responses
 
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+Unless otherwise documented, successful responses to each HTTP method will be as follows:
 
+    ● GET – A response will include:
+        ○ a status code of ​200 OK
+        ○ representation(s) of the requested resource(s)
+    ● POST – A response will include:
+        ○ a status code of ​201 Created
+        ○ a ​Location​ header with the URI of the newly­created resource, e.g.,
+                /v2/diary/0av9r4kgj23fdw
+        ○ a representation of the new resource in the body, as it would be returned by a GET request, including all possible properties that may be specified via the f​ ields query parameter.
+    ● PATCH – A response will include:
+        ○ a status code of ​204 No Content
+        ○ an empty body
+    ● DELETE – A response will include:
+        ○ a status code of ​204 No Content
+        ○ an empty body
+        
+ 
+Unless otherwise documented, the response to a failed request will include:
 
-## Subtitle
-
-Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+    ● a status code indicating the nature of the failure
+    ● an error message explaining why the request failed

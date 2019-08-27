@@ -4,11 +4,15 @@ title: MyFitnessPal Developer - Error Responses
 permalink: /docs-mpf/error-responses/
 ---
 
-# Title - error-responses
+# Error Responses
 
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+In the event of client error, the response to which will include an HTTP status code in the 400­499 range, the body of the response will be a structure detailing the error.
 
-
-## Subtitle
-
-Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+**Name** | **Description** | **Type** | **Required** | **Default Value**
+ --- | --- | --- | --- | --- 
+ error | a code representing the type of application error that was encountered | string | Y | subscribe/3
+ error_description | a message that describes the error to the user (localized for the locale associated with the request) | string | Y |
+ error_uri | a URI with more information about this type of error | uri | N |
+ error_details | key/value pairs providing additional details related to the errors | map | N |
+ 
+ In the event of server error (status codes 5​00-599)​ , the server will attempt to include a similar structure describing the error. However, depending on the nature of the error, such a response may not be possible.

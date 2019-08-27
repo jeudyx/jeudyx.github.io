@@ -18,9 +18,11 @@ The following query­string parameter may be included with most requests made to
  
  Consider the following examples, which illustrate how the response content of a Diary resource changes based on the presence and value of the **fields**​ query parameter.
  
- **Example 1: No *​fields***
+ ## **Example 1: No *​fields***
  
- Request: ​GET /diary/9348fwn4go89v48ghg
+ Request: ​
+ 
+    GET /diary/9348fwn4go89v48ghg
  
  Response body:
  
@@ -36,9 +38,11 @@ The following query­string parameter may be included with most requests made to
     }
     
 
-**Example 2: ​fields: ​energy, exercise**
+## **Example 2: ​fields: ​energy, exercise**
 
-Request: ​GET /diary/9348fwn4go89v48ghg?fields[]=energy&fields[]=exercise
+Request: ​
+
+    GET /diary/9348fwn4go89v48ghg?fields[]=energy&fields[]=exercise
 
 Response body:
 
