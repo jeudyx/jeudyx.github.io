@@ -4,12 +4,16 @@ title: MyFitnessPal Developer - Response
 permalink: /docs-mpf/post-response/
 ---
 
-# Title - post-response
+# Access Token Response
 
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+A successful response will have a status code of ​200 OK,​ and the response body will contain a structure with the following properties:
 
-
-## Subtitle
-
-Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
-
+**Name** | **Description** 
+ :--- | --- 
+ access_token | The access token the client may include on future requests in order to be considered authenticated
+ token_type | The type of token returned. Will have the value **​Bearer​**.
+ expires_in | In seconds, indicates how far in the future the token will expire. This is calculated when the request is processed, so it should be considered an approximate value.
+ refresh_token | A refresh token, if the flow and client configuration allow issuing refresh tokens.
+ user_id | The unique identifier of the user associated with the access token.
+ 
+ The value returned in ​user_id should be included in API requests as the value of the **mfp-user-id**​ HTTP header.

@@ -4,12 +4,14 @@ title: MyFitnessPal Developer - Error Responses
 permalink: /docs-mpf/auth-errors/
 ---
 
-# Title - auth-errors
+# Authorization Errors
 
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+If a redirect cannot happen due to a missing, invalid, or mismatched **​redirect_uri**​ value, the response will include a status code of **​400 Bad Request**.​
 
+If an authorization code cannot be created due to other client errors, the request will be redirected, with the following error values appended as query parameters, as applicable:
 
-## Subtitle
-
-Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
-
+**Names** | **Description** 
+ :--- | --- 
+ error | Identifier or name of the error
+ error_description | A longer description of the error, with information on how to address it
+ error_uri | The URL of a web page with more information about the error
