@@ -4,11 +4,38 @@ title: MyFitnessPal Developer - Response Body
 permalink: /docs-mpf/response-body/
 ---
 
-# Title - response-body
+# Response Body
 
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+When a successful response has a nonempty body, regardless of request method, it shall be a representation of one or more resources, wrapped in an object with a key of **​item**​ (for single-resource responses) or **​items**​ (for one­or­more­resource responses).
 
+## Example 1: a JSON representation of a single resource
 
-## Subtitle
+    {
+    "item": {
+              "id": "qwerty123foo",
+              "name": "An object name",
+              "quantity": 42
+            } 
+    }
+    
+## Example 2: a JSON representation of a collection of resources
 
-Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+    {
+    "items": [
+              {
+                "id": "qwerty123foo",
+                "name": "An object name",
+                "quantity": 42
+              }, 
+              {
+                "id": "abc98sdf8",
+                "name": "Another object name",
+                "quantity": 17
+              }, 
+              {
+                "id": "ld49bfh30vm549dr",
+                "name": "A third object",
+                "quantity": 9847
+              } 
+             ]   
+    }
