@@ -4,12 +4,36 @@ title: MyFitnessPal Developer - Example Response with no fields parameter
 permalink: /docs-mpf/example-response-no-fields-parameter/
 ---
 
-# Title - example-response-no-fields-parameter
+# Users
+The following resource structure definitions are relevant for this set of endpoints:
 
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+● [User](appendix-data-structures-user.md)
 
+● [Measured Value](appendix-data-structures-measured-value.md)
 
-## Subtitle
+● [User Profile](appendix-data-structures-user-profile.md)
 
-Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+● [Account](appendix-data-structures-account.md)　
 
+● [Privacy Preferences](appendix-data-structures-privacy-preferences.md)
+
+● [Goal Preferences](appendix-data-structures-goal-preferences.md)
+
+● [Location Preferences](appendix-data-structures-location-preferences.md)
+
+● [Diary Preferences](appendix-data-structures-diary-preferences.md)
+
+## Resources
+
+    GET ​/users/​:userId
+
+Returns a representation of the user identified by ​:userId​ (the unique string user identifier), subject to authorization.
+
+## Example Response with no ​fields​ parameter
+
+    {         
+     "item": {
+               "id": "fs34o4ifseijo4n9",
+               "username": "an_mfp_username"
+            } 
+    }
