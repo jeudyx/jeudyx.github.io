@@ -12,7 +12,7 @@ This is the second step in the process, using the newly-granted authorization co
     
 The contents of this request are submitted as standard form parameters. The Content-Type header must be:
 
-    Content­Type: x-www-form-urlencoded
+    Content-Type: x-www-form-urlencoded
 
 ## Request Body Form Parameters
 

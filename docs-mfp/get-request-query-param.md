@@ -27,8 +27,7 @@ The following query­string parameter may be included with most requests made to
  Response body:
  
     {
-    "item":
-         {
+        "item": {
            "id": "9348fwn4go89v48ghg",
            "type": "exercise",
            "date": "2014-07-15",
@@ -47,24 +46,23 @@ Request: ​
 Response body:
 
     {
-    "item":
-            {
-              "id": "9348fwn4go89v48ghg",
-              "type": "exercise",
-              "date": "2014-07-15",
-              "start_time": "2014-05-06T08:30:05-07:00",
-              "duration": 2700,
-              "energy": {
-                "unit": "calories",
-                "value": 500
-              },
-              "exercise": {
-                "id": "b95n9898878f4",
-                "version": "g8v7h",
-                "type": "cardio",
-                "description": "Curling",
-                "mets": 4.0,
-                "public": true
-                } 
-            }
+        "item": {
+          "id": "9348fwn4go89v48ghg",
+          "type": "exercise",
+          "date": "2014-07-15",
+          "start_time": "2014-05-06T08:30:05-07:00",
+          "duration": 2700,
+          "energy": {
+            "unit": "calories",
+            "value": 500
+          },
+          "exercise": {
+            "id": "b95n9898878f4",
+            "version": "g8v7h",
+            "type": "cardio",
+            "description": "Curling",
+            "mets": 4.0,
+            "public": true
+           } 
+        }
     }

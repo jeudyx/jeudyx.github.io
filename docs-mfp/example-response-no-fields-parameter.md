@@ -32,8 +32,8 @@ Returns a representation of the user identified by ​:userId​ (the unique str
 ## Example Response with no ​fields​ parameter
 
     {         
-     "item": {
-               "id": "fs34o4ifseijo4n9",
-               "username": "an_mfp_username"
-            } 
+        "item": {
+           "id": "fs34o4ifseijo4n9",
+           "username": "an_mfp_username"
+        } 
     }

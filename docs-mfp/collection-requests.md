@@ -8,16 +8,18 @@ permalink: /docs-mpf/collection-requests/
 
 Initial requests may include this parameter in addition to resource-specific request parameters:
 
-    ● max_items​ – the maximum number of resources to return in the response. If not provided, 
-      the default value of 100 is assumed, unless otherwise specified by an API endpoint.
+    ● max_items​ – the maximum number of resources to return in the response. If 
+    not provided, the default value of 100 is assumed, unless otherwise specified 
+    by an API endpoint.
 
 When a response is a paginated collection of resources,it will include an HTTP **L​ink​** header with "next" and/or "previous" URLs, which clients may use to request the respective page of resources. The URLs will contain:
 
     ● the original request URI
-    ● a pagination token, which is a string that encapsulates the original request parameters, 
-      the page size, and the pagination offset/cursor
-    ● a parameter called ​max_items​, which contains the originally requested m​ ax_items value 
-      (or the default value if none was specified), but which may be altered by the client
+    ● a pagination token, which is a string that encapsulates the original 
+      request parameters, the page size, and the pagination offset/cursor
+    ● a parameter called ​max_items​, which contains the originally requested 
+      m​ax_items value (or the default value if none was specified), but 
+      which may be altered by the client
 
 An example header value (line breaks added for readability):
 
@@ -52,33 +54,32 @@ The following parameters will be available for every request made to an API endp
  Response body:
  
      {
-     "items": [
-               {
-                 "type": "diary_meal",
-                 "date": "2014-07-15",
-                 "diary_meal": "Breakfast",
-                 "nutritional_contents": {
-                   "energy": { "unit": "calories", "value": 350 },
-                   "fat": 6.8,
-                   "protein": 19,
-                   "sugar": 8
-                 } 
-               },
-               {
-                 "type": "diary_meal",
-                 "date": "2014-07-15",
-                 "diary_meal": "Lunch",
-                 "nutritional_contents": {
-                   "energy": { "unit": "calories", "value": 531 },
-                   "fat": 12,
-                   "protein": 25,
-                   "sugar": 9,
-                   "cholesterol": 125,
-                   "fiber": 6,
-                   "vitamin_a": 35,
-                   "vitamin_c": 40
-                 } 
-               }
-             ] 
+         "items": [ {
+             "type": "diary_meal",
+             "date": "2014-07-15",
+             "diary_meal": "Breakfast",
+             "nutritional_contents": {
+               "energy": { "unit": "calories", "value": 350 },
+               "fat": 6.8,
+               "protein": 19,
+               "sugar": 8
+             } 
+           },
+           {
+             "type": "diary_meal",
+             "date": "2014-07-15",
+             "diary_meal": "Lunch",
+             "nutritional_contents": {
+               "energy": { "unit": "calories", "value": 531 },
+               "fat": 12,
+               "protein": 25,
+               "sugar": 9,
+               "cholesterol": 125,
+               "fiber": 6,
+               "vitamin_a": 35,
+               "vitamin_c": 40
+             } 
+           }
+         ] 
      }
  
