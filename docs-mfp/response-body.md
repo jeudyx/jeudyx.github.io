@@ -11,31 +11,31 @@ When a successful response has a nonempty body, regardless of request method, it
 ## Example 1: a JSON representation of a single resource
 
     {
-    "item": {
-              "id": "qwerty123foo",
-              "name": "An object name",
-              "quantity": 42
-            } 
+        "item": {
+          "id": "qwerty123foo",
+          "name": "An object name",
+          "quantity": 42
+        } 
     }
     
 ## Example 2: a JSON representation of a collection of resources
 
     {
-    "items": [
-              {
-                "id": "qwerty123foo",
-                "name": "An object name",
-                "quantity": 42
-              }, 
-              {
-                "id": "abc98sdf8",
-                "name": "Another object name",
-                "quantity": 17
-              }, 
-              {
-                "id": "ld49bfh30vm549dr",
-                "name": "A third object",
-                "quantity": 9847
-              } 
-             ]   
+        "items": [ 
+          {
+            "id": "qwerty123foo",
+            "name": "An object name",
+            "quantity": 42
+          }, 
+          {
+            "id": "abc98sdf8",
+            "name": "Another object name",
+            "quantity": 17
+          }, 
+          {
+            "id": "ld49bfh30vm549dr",
+            "name": "A third object",
+            "quantity": 9847
+          } 
+        ]   
     }

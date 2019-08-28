@@ -19,11 +19,11 @@ Properties that are unordered lists should include their entire values; properti
 PATCH /v2/users/user123​ – request body:
 
     {
-            "item": {
-              "goal_preferences": {
-                "daily_step_goal": 12000
-               }
-            } 
+        "item": {
+          "goal_preferences": {
+            "daily_step_goal": 12000
+           }
+        } 
     }
     
 Values that may be updated for a user are:

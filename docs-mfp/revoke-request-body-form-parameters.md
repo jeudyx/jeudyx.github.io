@@ -6,7 +6,7 @@ permalink: /docs-mpf/revoke-request-body-form-parameters/
 
 # Revoking Tokens
 
-Partners may revoke access and refresh tokens at any time. This process follows the standard described in ​[RFC 7009](https://tools.ietf.org/html/rfc7009)​. Revoked tokens may continue to be accepted for a brief period, as the revocation propagates to all server­side caches and data stores.
+Partners may revoke access and refresh tokens at any time. This process follows the standard described in ​[RFC-7009](https://tools.ietf.org/html/rfc7009)​. Revoked tokens may continue to be accepted for a brief period, as the revocation propagates to all server­side caches and data stores.
 
     POST ​/oauth2/revoke
     
