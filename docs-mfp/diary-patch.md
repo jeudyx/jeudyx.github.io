@@ -4,12 +4,22 @@ title: MyFitnessPal Developer - Diary Patch
 permalink: /docs-mpf/diary-patch/
 ---
 
-# Title - diary-patch
+# Diary PATCH
 
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+    PATCH ​/diary/​:entryId
 
+Required permission scope: ​diary
 
-## Subtitle
+Updates the diary entry matching the given identifier. The user identified by the id in the **mfp­user-id​** header must be authorized to update the entry.
 
-Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+## Request body
 
+The request body is a representation of a diary entry, with the properties that are changing. (Immutable or calculated properties,such as i​d​ and n​utritional_contents,​ must not be present.)
+
+**Example request body, updating a duration on an ​exercise​ entry:**
+
+    {
+        "item": {
+          "duration": 2700
+        } 
+    }
