@@ -13,7 +13,7 @@ Required permission scope: ​**subscriptions**
 Retrieves all active subscriptions the client has for the user identified by the **m​fp-user-id** header.
 
 
-##Example Response
+## Example Response
 
     {
         "items": [
@@ -43,7 +43,7 @@ Required permission scope: ​**subscriptions**
 Retrieves the subscription with the given identifier.
 
 
-##Example Response
+## Example Response
     
     {
         "item": {
