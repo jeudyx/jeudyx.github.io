@@ -4,12 +4,35 @@ title: MyFitnessPal Developer - Exercises GET
 permalink: /docs-mpf/exercises-diary-get/
 ---
 
-# Title - exercises-diary-get
+# Exercises
 
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+The following resource structure definition is relevant for this set of endpoints:
 
+● [Exercise](appendix-data-structures-exercise.md)
 
-## Subtitle
+## Resource
 
-Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+    GET ​/exercises/​:exerciseId
+    
+Required permission scope: ​**private-exercises**
 
+Retrieves the exercise with the given identifier from the public database and, if the **m​fp-user-id** header contains a valid user id, the user's private exercises.
+
+## Request query parameters
+
+**Name** | **Description** | **Type** | **Required** | **Default Values**
+ :--- | --- | --- | :---: | ---
+ version | The version of the exercise being requested. If none is present, the current version is returned. | String | N | abc123qwerty
+ 
+ ## Example response
+ 
+     {
+        "item": {
+               "id": "zXKDV84eqnio8a4n",
+               "version": "d980v43",
+               "type": "cardio",
+               "description": "Curling",
+               "mets": 4,
+               "public": true
+         }
+     }
