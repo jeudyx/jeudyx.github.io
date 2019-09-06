@@ -25,9 +25,11 @@ Required permission scope: ​**subscriptions**
 
 Creates one or more subscriptions to item updates by the user identified by the value of the **mfp-user-id​** header for the client identified by the value of the **m​fp-client-id​** header.
 
+
 ## Request
 
 The request body must be empty. (This means that subscriptions to all content types will be created.)
+
 
 ## Response
 

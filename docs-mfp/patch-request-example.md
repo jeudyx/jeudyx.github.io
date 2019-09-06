@@ -14,6 +14,7 @@ The body is a view of the user containing only the properties that are changing.
 
 Properties that are unordered lists should include their entire values; properties that are key-value maps need include only the relevant keys and values, as other extant key­value pairs will be unchanged.
 
+
 ## Example
 
 PATCH /v2/users/user123​ – request body:

@@ -19,6 +19,7 @@ Additional HTTP headers that will be included:
 
 Servers receiving the request should acknowledge receipt of the request with a response containing a status code in the 200­299 range and an empty body.
 
+
 ## Example Request Body
 
 This example includes notifications about five items, two of which are associated with the same user.

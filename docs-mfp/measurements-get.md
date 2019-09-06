@@ -16,6 +16,7 @@ Required permission scope: ​measurements
 
 Retrieves the measurement with the given identifier, provided the user identified by the **mfp-user-id**​ header is authorized to access it.
 
+
 ## Example response
 
     {
@@ -35,6 +36,7 @@ Retrieves a set of measurements for the logged­in user, whose id is the value o
 
     GET ​/measurements   
     
+    
 ## Request query parameters
 
 **Name** | **Description** | **Type** | **Required** | **Sample Values**
@@ -43,6 +45,7 @@ Retrieves a set of measurements for the logged­in user, whose id is the value o
  types | A comma-delimited list of measurement types to include. | String | N | weight
  
  Currently, "weight" is the only supported measurement type.
+ 
  
  ## Response
  

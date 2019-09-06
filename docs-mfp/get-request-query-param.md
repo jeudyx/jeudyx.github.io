@@ -37,6 +37,7 @@ The following query­string parameter may be included with most requests made to
     }
     
 
+
 ## **Example 2: ​fields: ​energy, exercise**
 
 Request: ​

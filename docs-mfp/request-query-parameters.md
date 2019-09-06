@@ -11,6 +11,7 @@ This is the first step in the process, the granting of a single-use authorizatio
     GET ​/oauth2/auth
 
 
+
 ## Request Query Parameters
 
 **Name** | **Description** | **Required**
