@@ -10,9 +10,11 @@ Required permission scope: ​diary
 
 Creates one or more diary entries for the user identified by the value of the **mfp-user-id​** header. Clients may create diary entries of with types ​steps​ and ​exercise​.
 
+
 ## Request body
 
 The request body is a representation of an array of diary entries. When creating ​exercise​ diary entries, clients need provide only the ​id​ property of each exercise being logged. Additionally, clients may provide a value for the ​version​ property of each exercise being logged; if no v​ ersion is provided, the most recent version will be used. (In most instances, clients will be interested only in the most recent version of an exercise, and so they may opt to exclude the ​version property.)
+
 
 ##Properties common to all diary types
 
@@ -26,6 +28,7 @@ The request body is a representation of an array of diary entries. When creating
  
  In addition to the common properties, diary entries of different types require different properties. Each type's property breakdown is described in the following sections.
  For descriptions of each field, see the ​[Diary data structure definition](appendix-data-structures-diary.md).​
+ 
  
  ## Properties, type = exercise
  
@@ -62,6 +65,7 @@ The request body is a representation of an array of diary entries. When creating
  
  Exercises are user­generated content, and as such may change over time. In order to ensure that a logged exercise entry remains consistent, a diary entry is associated with a specific version of an exercise, even if that exercise is subsequently modified, perhaps to reflect more accurate energy expenditure. (To log the most recent version of an exercise, simply omit the version​ property. The version linked will be included in the response.)
  
+ 
  ##Properties, type = steps
  
  **Name** | **Type** | **Required** | **Default Value**
@@ -74,6 +78,7 @@ The request body is a representation of an array of diary entries. When creating
 Entries with type ​**steps**​ are automatically grouped into daily aggregates, allowing clients to provide their users with fine­grained step and calorie tracking in a way that ensures energy expenditure will not be double­counted.
 
 For a detailed description of ​steps ​usage,see the [A​ppendix](appendix-tracking-recommended-approach.md).​
+
 
 ## Example 1a: creating an exercise entry
     {
@@ -99,6 +104,7 @@ For a detailed description of ​steps ​usage,see the [A​ppendix](appendix-t
           } 
       ]
     }
+    
     
 ## Example 1b: creating an exercise entry for a specific version of an exercise
 
@@ -126,6 +132,7 @@ For a detailed description of ​steps ​usage,see the [A​ppendix](appendix-t
         } 
       ]
     }
+
 
 ## Example 1c: creating multiple exercise entries
 
@@ -160,6 +167,7 @@ For a detailed description of ​steps ​usage,see the [A​ppendix](appendix-t
         ]
     }
     
+    
 ## Example 2: creating steps entries
 
     {
@@ -188,6 +196,7 @@ For a detailed description of ​steps ​usage,see the [A​ppendix](appendix-t
         } 
       ]
     }
+    
     
 ## Response
 

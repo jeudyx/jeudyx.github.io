@@ -25,6 +25,7 @@ Retrieves a single diary entry, provided the user id in the **​mfp-user-id**�
 
     GET ​/diary/​:entryId
 
+
 ## Response
 
 The response body is a diary entry matching the requested identifier.

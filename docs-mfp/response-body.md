@@ -8,6 +8,7 @@ permalink: /docs-mpf/response-body/
 
 When a successful response has a nonempty body, regardless of request method, it shall be a representation of one or more resources, wrapped in an object with a key of **​item**​ (for single-resource responses) or **​items**​ (for one­or­more­resource responses).
 
+
 ## Example 1: a JSON representation of a single resource
 
     {
@@ -17,6 +18,7 @@ When a successful response has a nonempty body, regardless of request method, it
           "quantity": 42
         } 
     }
+    
     
 ## Example 2: a JSON representation of a collection of resources
 

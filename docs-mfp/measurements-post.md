@@ -12,6 +12,7 @@ Required permission scope: ​measurements
 
 Creates one or more measurements.
 
+
 ## Request Body
 
 The request body is a representation of an array of measurements. If no value is supplied for date​, its value will be the current date.
@@ -29,6 +30,7 @@ The ​**weight**​ measurement type supports the following units:
     
     ● pounds
     ● kilograms
+  
     
 ## Example request body
 
@@ -53,6 +55,7 @@ The ​**weight**​ measurement type supports the following units:
         } 
       ]
     }
+   
     
 ## Response
 
