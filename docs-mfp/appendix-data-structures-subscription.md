@@ -4,12 +4,12 @@ title: MyFitnessPal Developer - Appendix Data Structures Subscription
 permalink: /docs-mpf/appendix-data-structures-subscription/
 ---
 
-# Title - appendix-data-structures-subscription
+# Appendix Data Structures - Exercise
 
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-
-
-## Subtitle
-
-Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
-
+**Name** | **Description** | **Type** | **Sample Values** 
+ --- | --- | --- | ---
+ id | String | Unique identifier of the subscription | v8rvh4lkg9489
+ client_id | String | Identifier of the client who owns the subscription | 094j4gin4984jg
+ content_type | String | The type of content described by this subscription | diary_exercise, diary_steps
+ user_id | String | Identifier of the user whose activity is subscribed to | 90wa3fj4of984hjt
+ created_at | Timestamp | The time at which this subscription was created | 2014­08­31T23:45:03Z
