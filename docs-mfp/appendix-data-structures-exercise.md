@@ -4,12 +4,18 @@ title: MyFitnessPal Developer - Appendix Data Structures Exercise
 permalink: /docs-mpf/appendix-data-structures-exercise/
 ---
 
-# Title - appendix-data-structures-exercise
+# Appendix Data Structures - Exercise
 
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+**Name** | **Description** | **Type** | **Sample Values** 
+ --- | --- | --- | ---
+ id | The obfuscated ID of the exercise | String | abc123qwerty
+ version | The version of this exercise. Every time an exercise is updated, a new version of the exercise is created. | String | abc123qwerty
+ type | The kind of exercise | String | cardio, strength
+ description | Text description of the exercise | String | "Stationary bike, moderate effort (bicycling, cycling, biking)"
+ mets | The metabolic equivalent of task (MET) for this exercise | Float | 6.5
+ public | Whether the exercise is included in the public database | Boolean | true, false
 
+Supported values for ​**exercise_type**​ are: 
 
-## Subtitle
-
-Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
-
+    ● cardio
+    ● strength
