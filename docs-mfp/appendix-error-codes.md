@@ -4,7 +4,7 @@ title: MyFitnessPal Developer - Appendix Data Error Codes
 permalink: /docs-mpf/appendix-error-codes/
 ---
 
-# Appendix Data Structures - User Profile
+# Appendix - Error Codes
 
 Error codes that may be returned in response bodies are listed below, along with explanations.
 
