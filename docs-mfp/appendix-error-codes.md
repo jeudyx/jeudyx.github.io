@@ -4,12 +4,25 @@ title: MyFitnessPal Developer - Appendix Data Error Codes
 permalink: /docs-mpf/appendix-error-codes/
 ---
 
-# Title - appendix-error-codes
+# Appendix Data Structures - User Profile
 
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+Error codes that may be returned in response bodies are listed below, along with explanations.
 
-
-## Subtitle
-
-Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
-
+**Name** | **Description** 
+ --- | --- 
+ duplicate-id | The client attempted to assign to a new object a unique identifier that is already used.
+ failed-validation | Validation error on the request.
+ internal | Internal server error.
+ invalid-id | The client attempted to assign to a new object a unique identifier that the server has deemed unacceptable.
+ malformed-body | Failed to parse request body.
+ malformed-header | Failed to interpret the value of a required HTTP header.
+ measurement/101 | Failed to retrieve measurement because the measurement type is not supported.
+ method-not-allowed | HTTP method is not allowed.
+ missing-body | Request body expected.
+ missing-header | Missing a required HTTP header.
+ not-found | The requested resource couldn't be found in the server.
+ uniqueness-violation | Error returned when trying to create a resource and uniqueness constraint is violated.
+ unsupported-content-type | Unsupported content type.
+ unsupported-diary-type | The requested diary entry type is unsupported.
+ 
+ 
