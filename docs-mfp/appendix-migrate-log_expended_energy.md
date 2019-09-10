@@ -4,12 +4,10 @@ title: MyFitnessPal Developer - Appendix
 permalink: /docs-mpf/appendix-migrate-log_expended_energy/
 ---
 
-# Title - appendix-migrate-log_expended_energy
+# v1 action: log_expended_energy
 
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+Logging expended energy is most commonly used for step tracking. To accomplish this with the v2 API, make a ​[POST request to ​/diary](diary-post.md)​ with type = **​steps**​, with a parent entry of type **steps_aggregate**​.
 
+Clients creating the first ​**steps**​ entry of a day may create the corresponding **s​teps_aggregate** entry in the same request, provided the ​**steps_aggregate**​ entry has an acceptable **i​d**​ property, and the chosen **​id**​ value is set as the **​steps**​ entry's ​**parent_id**​ property. (If the chosen ​**id**​ property is not acceptable, the entire request will fail.)
 
-## Subtitle
-
-Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
-
+The ​**steps_aggregate​** entry may be created separately, of course.
