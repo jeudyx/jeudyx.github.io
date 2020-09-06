@@ -8,7 +8,7 @@ permalink: /docs/v71_Course/
 
 # {{ page.resource }}
 
-Returns information about {{ page.resource }}s, which are user-defined or automatically generated [Route]({{ site.github.url }}/docs/v71_Route) segments that users may travel upon during [Workouts]({{ site.github.url }}/docs/v71_Workout) and over which they may compete for various performance metrics measured over the {{ page.resource }}.
+Returns information about {{ page.resource }}s, which are user-defined or automatically generated [Route](/docs/v71_Route) segments that users may travel upon during [Workouts](/docs/v71_Workout) and over which they may compete for various performance metrics measured over the {{ page.resource }}.
 
 ## Resource URIs
 

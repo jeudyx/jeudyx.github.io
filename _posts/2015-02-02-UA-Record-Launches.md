@@ -12,16 +12,16 @@ A new feature, Personal Challenges, has also been integrated into the UA Record 
 
 Even more exciting are the features we added to our platform to build UA Record that we’re now opening up to all developers. You can find many new and updated API endpoints powering features found in UA Record, including:
 
-- [Activity Story]({{ site.github.url }}/docs/v70_Activity_Story)
-- [Moderation Action]({{ site.github.url }}/docs/v70_Moderation_Action)
-- [Moderation Action Type]({{ site.github.url }}/docs/v70_Moderation_Action_Type)
-- [Moderation Status]({{ site.github.url }}/docs/v70_Moderation_Status)
-- [Page]({{ site.github.url }}/docs/v70_Page)
-- [Page Association]({{ site.github.url }}/docs/v70_Page_Association)
-- [Page Follow]({{ site.github.url }}/docs/v70_Page_Follow)
-- [Page Type]({{ site.github.url }}/docs/v70_Page_Type)
-- [Role]({{ site.github.url }}/docs/v70_Role)
-- [User Role]({{ site.github.url }}/docs/v70_User_Role)
+- [Activity Story](/docs/v70_Activity_Story)
+- [Moderation Action](/docs/v70_Moderation_Action)
+- [Moderation Action Type](/docs/v70_Moderation_Action_Type)
+- [Moderation Status](/docs/v70_Moderation_Status)
+- [Page](/docs/v70_Page)
+- [Page Association](/docs/v70_Page_Association)
+- [Page Follow](/docs/v70_Page_Follow)
+- [Page Type](/docs/v70_Page_Type)
+- [Role](/docs/v70_Role)
+- [User Role](/docs/v70_User_Role)
 
 To try out UA Record, download the mobile app for iPhone on the [App Store](https://itunes.apple.com/us/app/under-armour-women-i-will/id895425891?mt=8) or from the [Google Play Store](https://play.google.com/store/apps/details?id=com.ua.record&hl=en). You can also visit [Record.UnderArmour.com](https://record.underarmour.com/) to set up an account or login with an existing MapMyFitness or Under Armour account.
 
